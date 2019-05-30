@@ -5,13 +5,16 @@ NOTE - ONLY THE INPUTS DESCRIBED ARE REQUIRED, EXAMPLE PROVIDED AS VISUAL REFERE
 EXAMPLE: https://www.letterstickers.com.au/lettering-design?gclid=CjwKCAjw27jnBRBuEiwAdjQXDCu11uTJZuxwznx6MgeInX2vIpcdNbJOGZJkgntl-rmz-t9yNFBOkBoCeFwQAvD_BwE
 
 PART 1 – SIGN DEMO
+
 Overview
+
 The goal is for the user to create the sign on the go using the provided inputs so they can see how it looks before purchasing.
 The user fills in the inputs and a visual representation of the sign is displayed on the page. The representation will be dynamically updated upon change to any input, without the page reloading (eg ajax or similar). 
 User inputs to be stored in browser for subsequent visits to site.
 No additional CSS styling of the form required.
 
 INPUTS
+
 1. Size Selection
 This will create a ‘canvas’ for the sign, the canvas must have padding and the text added must not exceed the width of the canvas minus padding. 
 If the text overflows the padding a warning must be given below the relevant text input that the text exceeds the available canvas width.
