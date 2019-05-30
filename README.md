@@ -20,71 +20,72 @@ No additional CSS styling of the form required.
 --------------------------------------------------------------------------------------------------------------------------------
 INPUTS
 
-1. Size Selection:
+1. Input for sign size selection:
 This will create a ‘canvas’ for the sign, the canvas must have padding and the text added must not exceed the width or height of the canvas minus padding. 
+
 If the text overflows the padding a warning must be given below the relevant text input that the text exceeds the available canvas width or height.
 
-	1a. Dimensions.
+	a. Dimensions.
 	- 200mm x 300mm,
 	- 400mm x 600mm (default),
 	- 600mm x 800mm.
 
-	1b. Orientation.
+	b. Orientation.
 	- Horizontal (default),
 	- Vertical.
 
-	1c. Padding (width and height).
+	c. Padding (width and height).
 	- default / minimum 25mm,
 	- customizable with slider or input.
 
 --------------------------------------------------------------------------------------------------------------------------------
-2. Text:
+2. Input for Sign Text:
 The user inputs the text for each line of the sign. By default there is one line with a button to add additional lines. 
 For each line the user can edit the text, change the line height, choose the height of the lettering in mm and choose the color.
+
 If text exceeds width or height of the canvas minus padding a warning is given (and the form cannot submit). 
+
 If extra lines will not fit at any time, display text below the line in red, informing user ‘this line exceeds the available space and will not be visible’. For example if a lines size is increased pushing the line below off the canvas.
 
 	FOR EACH LINE:
 
-	2a. Enter Text – Text Input, one line only, no wrap, default ‘Enter your text here’.
+	a. Enter Text – Text Input, one line only, no wrap, default ‘Enter your text here’.
 
-	2b. Letter Height – Number Input (mm) minimum 20mm, default 30mm.
+	b. Letter Height – Number Input (mm) minimum 20mm, default 30mm.
 
-	2c. Line Height – default 1.5 (minimum), increase / decrease input.
+	c. Line Height – default 1.5 (minimum), increase / decrease input.
 
-	2d. Color – dropdown list (order as per chart).
+	d. Color – dropdown list (order as per chart).
 	The color of the text will be updated in the demonstration upon selection of a color.
 	Include all the colors in the chart below as dropdown list with color name it’s  actual color eg. Deep Red. Open to discussing alternatives is you think there is a better way.
 	Default: black.
+	
+	e. Text Font – Dropdown with all Google Fonts available (alphabetical order).
+	Name of font to be in font eg. Book Antiqua. Text in demostration updated on selection change. Font selection is Google Fonts. 		- Default: Roboto.
  
---------------------------------------------------------------------------------------------------------------------------------
-3. Font, dropdown menu (alphabetical order):
-Name of font to be in font eg. Book Antiqua. Text in demostration updated on selection change. Font selection is Google Fonts. Default: Roboto.
-
-	3a. Dropdown with all Google Fonts available.
 
 --------------------------------------------------------------------------------------------------------------------------------
-4. Quantity:
+3. Input for Quantity of signs:
 
-	4a. Number of signs (default 10).
+	a. Number of signs (default 10).
 
 --------------------------------------------------------------------------------------------------------------------------------
-5. With stands? (Default no):
+4. Radio Input: With stands? (Default no):
 
-	5a. Yes > Quantity.
+	a. If Yes > Quantity (input):
 	- Same number as number of signs (default),
 	- user input number.
 
-	5b. No.
+	b. No > Hide.
 
 --------------------------------------------------------------------------------------------------------------------------------
-6. Shipping Estimator:
+5. Shipping Estimator:
 
-	6a. Country (Australia only),
+	a. Country (Australia only),
 
-	6b. State (all states, default Western Australia),
+	b. State (all states, default Western Australia),
 
-	6c. postcode (default blank).
+	c. postcode (default blank).
 
 
 
@@ -95,7 +96,7 @@ PART 2 – Pricing / Figures.
 --------------------------------------------------------------------------------------------------------------------------------
 OVERVIEW.
 
-Display total cost, itemised to include all inputs listed below, if any input is 0 or empty do not display in total.
+Display the total cost, itemised to include all inputs listed below, if any input is 0 or empty do not display in total.
 
 I will modify the pricing in the code you deliver as required, placeholder pricing below. 
 Pricing updated dynamically on input changes.
@@ -187,7 +188,7 @@ Markup presented in this order:
 	- Total cost of signs.
 
 	- Cost per stand (hide if 0),
-	- Total cost of stands.
+	- Total cost of stands (hide if 0).
 
 	- Sub total: signs + stands.
 
