@@ -41,7 +41,7 @@ If the text overflows the padding a warning must be given below the relevant tex
 2. Text:
 The user inputs the text for each line of the sign. By default there is one line with a button to add additional lines. 
 For each line the user can edit the text, change the line height, choose the height of the lettering in mm and choose the color.
-If text exceeds width or height of the canvas - padding a warning is given and form cannot submit. 
+If text exceeds width or height of the canvas minus padding a warning is given (and the form cannot submit). 
 If extra lines will not fit at any time, display text below the line in red, informing user ‘this line exceeds the available space and will not be visible’. For example if a lines size is increased pushing the line below off the canvas.
 
 	FOR EACH LINE:
