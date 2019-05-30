@@ -19,18 +19,18 @@ INPUTS.
 This will create a ‘canvas’ for the sign, the canvas must have padding and the text added must not exceed the width of the canvas minus padding. 
 If the text overflows the padding a warning must be given below the relevant text input that the text exceeds the available canvas width.
 
-1a. Dimensions.
-- 200mm x 300mm,
-- 400mm x 600mm (default),
-- 600mm x 800mm.
+	1a. Dimensions.
+	- 200mm x 300mm,
+	- 400mm x 600mm (default),
+	- 600mm x 800mm.
 
-1b. Orientation.
-- Horizontal (default),
-- Vertical.
+	1b. Orientation.
+	- Horizontal (default),
+	- Vertical.
 
-1c. Padding (width and height).
-- default / minimum 25mm,
-- customizable with slider or input.
+	1c. Padding (width and height).
+	- default / minimum 25mm,
+	- customizable with slider or input.
 
 
 2. Text.
@@ -41,45 +41,45 @@ If extra lines will not fit at any time, display text below the line in red, inf
 
 FOR EACH LINE:
 
-2a. Enter Text – Text Input, one line only, no wrap, default ‘Enter your text here’.
+	2a. Enter Text – Text Input, one line only, no wrap, default ‘Enter your text here’.
 
-2b. Letter Height – Number Input (mm) minimum 20mm, default 30mm.
+	2b. Letter Height – Number Input (mm) minimum 20mm, default 30mm.
 
-2c. Line Height – default 1.5 (minimum), increase / decrease input.
-	
-2d. Color – dropdown list (order as per chart).
-- The color of the text will be updated in the demonstration upon selection of a color.
-Include all the colors in the chart below as dropdown list with color name it’s  actual color eg. Deep Red. Open to discussing alternatives is you think there is a better way.
-Default: black.
+	2c. Line Height – default 1.5 (minimum), increase / decrease input.
+
+	2d. Color – dropdown list (order as per chart).
+	The color of the text will be updated in the demonstration upon selection of a color.
+	Include all the colors in the chart below as dropdown list with color name it’s  actual color eg. Deep Red. Open to discussing alternatives is you think there is a better way.
+	Default: black.
  
 
 3. Font, dropdown menu (alphabetical order).
-- Name of font to be in font eg. Book Antiqua. Text in demostration updated on selection change. Font selection is Google Fonts. Default: Roboto.
+Name of font to be in font eg. Book Antiqua. Text in demostration updated on selection change. Font selection is Google Fonts. Default: Roboto.
 
-3a. Dropdown with all Google Fonts available.
+	3a. Dropdown with all Google Fonts available.
 
 
 4. Quantity.
 
-4a. Number of signs (default 10).
+	4a. Number of signs (default 10).
 
 
 5. With stands? (Default no),
 
-5a. Yes > Quantity.
-- Same number as number of signs (default),
-- user input number.
+	5a. Yes > Quantity.
+	- Same number as number of signs (default),
+	- user input number.
 
-5b. No.
+	5b. No.
 
 
 6. Shipping Estimator.
 
-6a. Country (Australia only),
+	6a. Country (Australia only),
 
-6b. State (all states, default Western Australia),
+	6b. State (all states, default Western Australia),
 
-6c. postcode (default blank).
+	6c. postcode (default blank).
 
 
 PART 2 – Pricing / Figures.
