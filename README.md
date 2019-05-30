@@ -89,7 +89,11 @@ Name of font to be in font eg. Book Antiqua. Text in demostration updated on sel
 
 
 --------------------------------------------------------------------------------------------------------------------------------
+
 PART 2 – Pricing / Figures.
+
+--------------------------------------------------------------------------------------------------------------------------------
+OVERVIEW.
 
 Display total cost, itemised to include all inputs listed below, if any input is 0 or empty do not display in total.
 
