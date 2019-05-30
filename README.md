@@ -4,8 +4,11 @@ Form that generates a preview of the sign and provides costings.
 NOTE - ONLY THE INPUTS DESCRIBED ARE REQUIRED, EXAMPLE PROVIDED AS VISUAL REFERENCE ONLY.
 EXAMPLE: https://www.letterstickers.com.au/lettering-design?gclid=CjwKCAjw27jnBRBuEiwAdjQXDCu11uTJZuxwznx6MgeInX2vIpcdNbJOGZJkgntl-rmz-t9yNFBOkBoCeFwQAvD_BwE
 
+--------------------------------------------------------------------------------------------------------------------------------
+
 PART 1 – SIGN DEMO.
 
+--------------------------------------------------------------------------------------------------------------------------------
 OVERVIEW.
 
 The goal is for the user to create the sign on the go using the provided inputs so they can see how it looks before purchasing.
@@ -13,7 +16,9 @@ The user fills in the inputs and a visual representation of the sign is displaye
 User inputs to be stored in browser for subsequent visits to site.
 No additional CSS styling of the form required.
 
-INPUTS.
+
+--------------------------------------------------------------------------------------------------------------------------------
+INPUTS
 
 1. Size Selection:
 This will create a ‘canvas’ for the sign, the canvas must have padding and the text added must not exceed the width of the canvas minus padding. 
@@ -32,7 +37,7 @@ If the text overflows the padding a warning must be given below the relevant tex
 	- default / minimum 25mm,
 	- customizable with slider or input.
 
-
+--------------------------------------------------------------------------------------------------------------------------------
 2. Text:
 The user inputs the text for each line of the sign. By default there is one line with a button to add additional lines. 
 For each line the user can edit the text, change the line height, choose the height of the lettering in mm and choose the color.
@@ -52,18 +57,18 @@ If extra lines will not fit at any time, display text below the line in red, inf
 	Include all the colors in the chart below as dropdown list with color name it’s  actual color eg. Deep Red. Open to discussing alternatives is you think there is a better way.
 	Default: black.
  
-
+--------------------------------------------------------------------------------------------------------------------------------
 3. Font, dropdown menu (alphabetical order):
 Name of font to be in font eg. Book Antiqua. Text in demostration updated on selection change. Font selection is Google Fonts. Default: Roboto.
 
 	3a. Dropdown with all Google Fonts available.
 
-
+--------------------------------------------------------------------------------------------------------------------------------
 4. Quantity:
 
 	4a. Number of signs (default 10).
 
-
+--------------------------------------------------------------------------------------------------------------------------------
 5. With stands? (Default no):
 
 	5a. Yes > Quantity.
@@ -72,7 +77,7 @@ Name of font to be in font eg. Book Antiqua. Text in demostration updated on sel
 
 	5b. No.
 
-
+--------------------------------------------------------------------------------------------------------------------------------
 6. Shipping Estimator:
 
 	6a. Country (Australia only),
@@ -83,13 +88,16 @@ Name of font to be in font eg. Book Antiqua. Text in demostration updated on sel
 
 
 
-
+--------------------------------------------------------------------------------------------------------------------------------
 PART 2 – Pricing / Figures.
 
 Display total cost, itemised to include all inputs listed below, if any input is 0 or empty do not display in total.
 
 I will modify the pricing in the code you deliver as required, placeholder pricing below. 
 Pricing updated dynamically on input changes.
+
+--------------------------------------------------------------------------------------------------------------------------------
+SIGN PRICING:
 
 1. Size Selection.
 - 300mm x 450mm: $10.00 per sign,
@@ -122,7 +130,8 @@ Pricing updated dynamically on input changes.
 - 20 - 50 signs: 15% discount,
 - 50+ signs: 20% discount.
 
-5. Shipping.
+--------------------------------------------------------------------------------------------------------------------------------
+SHIPPING PRICING:
 
 Stands: 
 - 1 stand: +$2.50,
@@ -143,7 +152,8 @@ States:
 - ACT +$25.00.
 
 
-LAYOUT SUMMARY.
+--------------------------------------------------------------------------------------------------------------------------------
+LAYOUT SUMMARY:
 Markup presented in this order:
 
 1. Sign inputs, 
