@@ -168,34 +168,34 @@ Markup presented in this order:
 
 3. Summary of selected design choices:
 
-Size of sign:
+	Size of sign:
 
-For each line:
-- Text,
-- Size,
-- Color,
-- Font.
+	For each line:
+	- Text,
+	- Size,
+	- Color,
+	- Font.
 
-Quantity of Signs:
+	Quantity of Signs:
 
-Number of stands: (hide if 0)
+	Number of stands: (hide if 0)
 
 
 4. Summary of Totals:
 
-- Cost per sign,
-- Total cost of signs.
+	- Cost per sign,
+	- Total cost of signs.
 
-- Cost per stand (hide if 0),
-- Total cost of stands.
+	- Cost per stand (hide if 0),
+	- Total cost of stands.
 
-- Sub total: signs + stands.
+	- Sub total: signs + stands.
 
-- Shipping Total.
+	- Shipping Total.
 
-- Grand Total: sub total + shipping total.
+	- Grand Total: sub total + shipping total.
 
-- Total includes GST of (10% of grand total).
+	- Total includes GST of (10% of grand total).
 
 
 
