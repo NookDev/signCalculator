@@ -137,16 +137,9 @@ SIGN PRICING:
 --------------------------------------------------------------------------------------------------------------------------------
 SHIPPING PRICING:
 
-Stands: 
-- 1 stand: +$2.50,
-- 2-9 stands: +$5.00,
-- 10 - 19 stands: +$7.50,
-- 20 - 49 stands:  +$10.00,
-- 50+ stands: +$15.00.
-
 Local pickup: +$0.00.
 
-States:  
+Delivery to each state:  
 - WA +$12.00, 
 - VIC +$15.00, 
 - NSW +$17.00, 
@@ -155,15 +148,22 @@ States:
 - SA +$22.00, 
 - ACT +$25.00.
 
+Stands: 
+- if local delivery $0.00,
+- 1 stand: +$2.50,
+- 2-9 stands: +$5.00,
+- 10 - 19 stands: +$7.50,
+- 20 - 49 stands:  +$10.00,
+- 50+ stands: +$15.00.
 
 --------------------------------------------------------------------------------------------------------------------------------
 LAYOUT SUMMARY:
 Markup presented in this order:
 
-1. Sign inputs, 
+1. Sign inputs.
 
 
-2. Demo of sign (updated on input change without reloading page),
+2. Demo of sign (updated on input change without reloading page).
 
 
 3. Summary of selected design choices:
