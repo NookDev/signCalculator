@@ -21,8 +21,8 @@ No additional CSS styling of the form required.
 INPUTS
 
 1. Size Selection:
-This will create a ‘canvas’ for the sign, the canvas must have padding and the text added must not exceed the width of the canvas minus padding. 
-If the text overflows the padding a warning must be given below the relevant text input that the text exceeds the available canvas width.
+This will create a ‘canvas’ for the sign, the canvas must have padding and the text added must not exceed the width or height of the canvas minus padding. 
+If the text overflows the padding a warning must be given below the relevant text input that the text exceeds the available canvas width or height.
 
 	1a. Dimensions.
 	- 200mm x 300mm,
