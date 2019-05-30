@@ -15,7 +15,7 @@ No additional CSS styling of the form required.
 
 INPUTS.
 
-1. Size Selection.
+1. Size Selection:
 This will create a ‘canvas’ for the sign, the canvas must have padding and the text added must not exceed the width of the canvas minus padding. 
 If the text overflows the padding a warning must be given below the relevant text input that the text exceeds the available canvas width.
 
@@ -33,13 +33,13 @@ If the text overflows the padding a warning must be given below the relevant tex
 	- customizable with slider or input.
 
 
-2. Text.
+2. Text:
 The user inputs the text for each line of the sign. By default there is one line with a button to add additional lines. 
 For each line the user can edit the text, change the line height, choose the height of the lettering in mm and choose the color.
 If text exceeds width or height of the canvas - padding a warning is given and form cannot submit. 
 If extra lines will not fit at any time, display text below the line in red, informing user ‘this line exceeds the available space and will not be visible’. For example if a lines size is increased pushing the line below off the canvas.
 
-FOR EACH LINE:
+	FOR EACH LINE:
 
 	2a. Enter Text – Text Input, one line only, no wrap, default ‘Enter your text here’.
 
@@ -53,18 +53,18 @@ FOR EACH LINE:
 	Default: black.
  
 
-3. Font, dropdown menu (alphabetical order).
+3. Font, dropdown menu (alphabetical order):
 Name of font to be in font eg. Book Antiqua. Text in demostration updated on selection change. Font selection is Google Fonts. Default: Roboto.
 
 	3a. Dropdown with all Google Fonts available.
 
 
-4. Quantity.
+4. Quantity:
 
 	4a. Number of signs (default 10).
 
 
-5. With stands? (Default no),
+5. With stands? (Default no):
 
 	5a. Yes > Quantity.
 	- Same number as number of signs (default),
@@ -73,13 +73,15 @@ Name of font to be in font eg. Book Antiqua. Text in demostration updated on sel
 	5b. No.
 
 
-6. Shipping Estimator.
+6. Shipping Estimator:
 
 	6a. Country (Australia only),
 
 	6b. State (all states, default Western Australia),
 
 	6c. postcode (default blank).
+
+
 
 
 PART 2 – Pricing / Figures.
