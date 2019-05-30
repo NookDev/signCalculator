@@ -26,22 +26,27 @@ If the text overflows the padding a warning must be given below the relevant tex
 
 1b. Orientation
 - Horizontal (default)
- - Vertical
+- Vertical
 
-	1c. Padding (width and height)
+1c. Padding (width and height)
 - default / minimum 25mm,
 - customizable with slider or input.
 
 2. Text
+
 The user inputs the text for each line of the sign. By default there is one line with a button to add additional lines. 
 For each line the user can edit the text, change the line height, choose the height of the lettering in mm and choose the color.
 If text exceeds width or height of the canvas - padding a warning is given and form cannot submit. 
 If extra lines will not fit at any time, display text below the line in red, informing user ‘this line exceeds the available space and will not be visible’. For example if a lines size is increased pushing the line below off the canvas.
 
 FOR EACH LINE:
-	2a. Enter Text – Text Input, one line only, no wrap, default ‘Enter your text here’
-	2b. Letter Height – Number Input (mm) minimum 20mm, default 30mm.
-	2c. Line Height – default 1.5 (minimum), increase / decrease input.
+
+2a. Enter Text – Text Input, one line only, no wrap, default ‘Enter your text here’
+
+2b. Letter Height – Number Input (mm) minimum 20mm, default 30mm.
+
+2c. Line Height – default 1.5 (minimum), increase / decrease input.
+	
 2d. Color – dropdown list (order as per chart).
 The color of the text will be updated in the demonstration upon selection of a color.
 Include all the colors in the chart below as dropdown list with color name it’s  actual color eg. Deep Red. Open to discussing alternatives is you think there is a better way.
@@ -54,6 +59,7 @@ Name of font to be in font eg. Book Antiqua. Text in demostration updated on sel
 3a. Dropdown with all Google Fonts available.
 
 4. Quantity
+
 4a. Number of signs (default 10)
 
 5. With stands? (Default no).
@@ -61,15 +67,19 @@ Name of font to be in font eg. Book Antiqua. Text in demostration updated on sel
 5a. Yes > Quantity
 - Same number as number of signs (default),
 - user input number.
+
 5b. No
 
 6. Shipping Estimator
 
 6a. Country (Australia only)
+
 6b. State (all states, default Western Australia)
+
 6c. postcode (default blank)
 
 PART 2 – Pricing / Figures
+
 Display total cost, itemised to include all inputs listed below, if any input is 0 or empty do not display in total.
 
 I will modify the pricing in the code you deliver as required, placeholder pricing below. 
