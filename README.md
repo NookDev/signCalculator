@@ -48,13 +48,13 @@ FOR EACH LINE:
 2c. Line Height – default 1.5 (minimum), increase / decrease input.
 	
 2d. Color – dropdown list (order as per chart).
-The color of the text will be updated in the demonstration upon selection of a color.
+- The color of the text will be updated in the demonstration upon selection of a color.
 Include all the colors in the chart below as dropdown list with color name it’s  actual color eg. Deep Red. Open to discussing alternatives is you think there is a better way.
 Default: black
  
 
 3. Font – dropdown menu (alphabetical order)
-Name of font to be in font eg. Book Antiqua. Text in demostration updated on selection change. Font selection is Google Fonts. Default: Roboto.
+- Name of font to be in font eg. Book Antiqua. Text in demostration updated on selection change. Font selection is Google Fonts. Default: Roboto.
 
 3a. Dropdown with all Google Fonts available.
 
@@ -77,6 +77,7 @@ Name of font to be in font eg. Book Antiqua. Text in demostration updated on sel
 6b. State (all states, default Western Australia)
 
 6c. postcode (default blank)
+
 
 PART 2 – Pricing / Figures
 
@@ -101,7 +102,7 @@ Pricing updated dynamically on input changes.
 
 2. Number of colors (max 3)
 - 1 color:  $0.00,
--2 colors: +$2.50 per sign,
+- 2 colors: +$2.50 per sign,
 - 3 colors: +$5.00 per sign.
 
 3. Number of lines
@@ -117,23 +118,24 @@ Pricing updated dynamically on input changes.
 - 50+ signs: 20% discount.
 
 5. Shipping
-- Stands: 
+Stands: 
 - 1 stand: +$2.50.
 - 2-9 stands: +$5.00.
 - 10 - 19 stands: +$7.50.
 - 20 - 49 stands:  +$10.00.
 - 50+ stands: +$15.00.
 
-- Local pickup: +$0.00
-- States:  
-WA +$12.00, 
-VIC +$15.00, 
-NSW +$17.00, 
-TAS +$19.00, 
-NT +$20.00, 
-SA +$22.00, 
-ACT +$25.00.
-- 
+Local pickup: +$0.00
+
+States:  
+- WA +$12.00, 
+- VIC +$15.00, 
+- NSW +$17.00, 
+- TAS +$19.00, 
+- NT +$20.00, 
+- SA +$22.00, 
+- ACT +$25.00.
+
 SUMMARY
 Markup presented in this order:
 
@@ -142,27 +144,33 @@ Markup presented in this order:
 2. Demo of sign (updated on input change without reloading page),
 
 3. Summary of selected design choices:
+
 Size of sign:
+
 For each line:
-	- Text,
-	- Size,
+- Text,
+- Size,
 - Color,
 - Font.
+
 Quantity of Signs:
+
 Number of stands: (hide if 0)
 
 4. Summary of Totals:
+
 - Cost per sign,
 - Total cost of signs.
 
 - Cost per stand (hide if 0),
--Total cost of stands.
+- Total cost of stands.
 
 - Sub total: signs + stands.
 
 - Shipping Total.
 
 - Grand Total: sub total + shipping total.
+
 - Total includes GST of (10% of grand total)
 
 
