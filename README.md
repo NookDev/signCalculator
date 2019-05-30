@@ -1,5 +1,5 @@
 # signCalculator
-Form that generates a preview of the sign and provides costings.
+Form that generates a preview of a coreflute sign and provides costings.
 
 NOTE - ONLY THE INPUTS DESCRIBED ARE REQUIRED, EXAMPLE PROVIDED AS VISUAL REFERENCE ONLY:
 https://www.letterstickers.com.au/lettering-design?gclid=CjwKCAjw27jnBRBuEiwAdjQXDCu11uTJZuxwznx6MgeInX2vIpcdNbJOGZJkgntl-rmz-t9yNFBOkBoCeFwQAvD_BwE
