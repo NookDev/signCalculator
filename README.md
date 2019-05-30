@@ -57,11 +57,11 @@ For each line the user can edit the text, change the line height, choose the hei
 
 	d. Color – dropdown list (order as per chart).
 	The color of the text will be updated in the demonstration upon selection of a color.
-	Include all the colors in the chart below as dropdown list with color name it’s  actual color eg. Deep Red. Open to discussing alternatives is you think there is a better way.
+	Include all the colors in the chart (see NookDigitalMarketing-Polymetric-Vinyl.JPG) as dropdown list with color name it’s  actual color eg. Deep Red is the color Deep Red. Open to discussing alternatives is you think there is a better way.
 	Default: black.
 	
 	e. Text Font – Dropdown with all Google Fonts available (alphabetical order).
-	Name of font to be in font eg. Book Antiqua. Text in demostration updated on selection change. Font selection is Google Fonts. 		- Default: Roboto.
+	Name of font to be in font eg. Book Antiqua is the font Book Antiqua. Text in demostration updated on selection change. Font selection is Google Fonts. 		- Default: Roboto.
  
 
 --------------------------------------------------------------------------------------------------------------------------------
