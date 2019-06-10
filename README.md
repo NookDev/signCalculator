@@ -38,6 +38,10 @@ INPUTS
 	- default / minimum 25mm,
 	- customizable with slider or input.
 
+        c. Colour.
+	- White (default),
+	- Red, Blue, Green, Yellow
+
 --------------------------------------------------------------------------------------------------------------------------------
 2. Input for Sign Text:
 	The user inputs the text for each line of the sign. By default there is one line with a button to add additional lines. 
@@ -55,7 +59,7 @@ For each line the user can edit the text, change the line height, choose the hei
 
 	c. Line Height – default 1.5 (minimum), increase / decrease input.
 
-	d. Color – dropdown list (order as per chart).
+	d. Color – colorpicker (names as per color chart).
 	The color of the text will be updated in the demonstration upon selection of a color.
 	Include all the colors in the chart (see NookDigitalMarketing-Polymetric-Vinyl.JPG) as dropdown list with color name it’s  actual color eg. Deep Red is the color Deep Red. Open to discussing alternatives is you think there is a better way.
 	Default: black.
