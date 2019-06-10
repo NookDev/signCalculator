@@ -37,7 +37,7 @@ INPUTS
 	c. Padding (width and height).
 	- minimum 25mm (default),
 	- customizable with slider or input.
-        - checkbox show / hide padding (default hidden)
+	- checkbox show / hide padding (default hidden)
 
 	d. Sign Colour.
 	- White (default),
