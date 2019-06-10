@@ -2,6 +2,7 @@
 Form that generates a preview of a coreflute sign and provides costings.
 
 NOTE - SEE form-html.php and form-html.scss for example. This can be used as a starting point for adding the javascript functionality.
+LIVE DEMO - http://www.cheapstickers.com.au/
 
 
 --------------------------------------------------------------------------------------------------------------------------------
