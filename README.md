@@ -35,12 +35,14 @@ INPUTS
 	- Vertical.
 
 	c. Padding (width and height).
-	- default / minimum 25mm,
+	- minimum 25mm (default),
 	- customizable with slider or input.
+        - checkbox show / hide padding (default hidden)
 
-        c. Colour.
+        d. Sign Colour.
 	- White (default),
-	- Red, Blue, Green, Yellow
+        - Black,
+	- Red, Blue, Green, Yellow.
 
 --------------------------------------------------------------------------------------------------------------------------------
 2. Input for Sign Text:
@@ -59,28 +61,30 @@ For each line the user can edit the text, change the line height, choose the hei
 
 	c. Line Height – default 1.5 (minimum), increase / decrease input.
 
-	d. Color – colorpicker (names as per color chart).
+	d1. Color – colorpicker (names as per color chart).
 	The color of the text will be updated in the demonstration upon selection of a color.
 	Include all the colors in the chart (see NookDigitalMarketing-Polymetric-Vinyl.JPG) as dropdown list with color name it’s  actual color eg. Deep Red is the color Deep Red. Open to discussing alternatives is you think there is a better way.
 	Default: black.
+
+        d2. Invert Color? (default: unchecked) - font color same as sign color, letter background font color. Expand past padding.
 	
 	e. Text Font – Dropdown with all Google Fonts available (alphabetical order).
 	Name of font to be in font eg. Book Antiqua is the font Book Antiqua. Text in demostration updated on selection change. Font selection is Google Fonts. 		- Default: Roboto.
  
-
+        
 --------------------------------------------------------------------------------------------------------------------------------
 3. Input for Quantity of signs:
 
 	a. Number of signs (default 10).
 
 --------------------------------------------------------------------------------------------------------------------------------
-4. Radio Input: With stands? (Default no):
+4. Radio Input: With sign stands? (Default : no):
 
 	a. If Yes > Quantity (input):
 	- Same number as number of signs (default),
 	- user input number.
 
-	b. No > Hide.
+	b. No > Hide any related info.
 
 --------------------------------------------------------------------------------------------------------------------------------
 5. Shipping Estimator:
@@ -89,7 +93,7 @@ For each line the user can edit the text, change the line height, choose the hei
 
 	b. State (all states, default Western Australia),
 
-	c. postcode (default blank).
+	c. Postcode (default blank).
 
 
 
@@ -100,7 +104,7 @@ PART 2 – Pricing / Figures.
 --------------------------------------------------------------------------------------------------------------------------------
 OVERVIEW.
 
-Display the total cost, itemised to include all inputs listed below, if any input is 0 or empty do not display in total.
+Display the total cost of the order, itemised to include all inputs listed below, if any input is 0 or empty do not display in total.
 
 I will modify the pricing in the code you deliver as required, placeholder pricing below. 
 Pricing updated dynamically on input changes.
@@ -114,7 +118,12 @@ SIGN PRICING:
 - 600mm x 900mm: $20.00 per sign,
 - 1200mm x 1800mm: $30.00 per sign.
 
-2. Stands.
+2. Colour.
+- White: $0,
+- Black : + $0.50
+- All other colours : + $1.00
+
+3. Stands.
 - 1 stand: $2.50,
 - 2-9 stands: $2.50 ea,
 - 10 - 19 stands: $2.00 ea,
@@ -122,17 +131,17 @@ SIGN PRICING:
 - 50+ stands: $1.50 ea.
 
 
-2. Number of colors (max 3).
+3. Number of vinyl colors (max 3).
 - 1 color:  $0.00,
 - 2 colors: +$2.50 per sign,
 - 3 colors: +$5.00 per sign.
 
-3. Number of lines.
+4. Number of lines.
 - 1-3:  $0.00,
 - 4-5: +$2.50 per sign.
 - 6+: +$5.00 per sign.
 
-4. Quantity.
+5. Quantity.
 - 1 sign: 0% discount,
 - 2-9 signs: 5% discount,
 - 10 - 19 signs: 10% discount,
