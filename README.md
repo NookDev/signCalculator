@@ -112,11 +112,11 @@ INPUTS - Order Options
 
 	b. Sign stands? (Default : no):
 
-		a. Yes -  Quantity:
-		- Same number as number of signs (default),
-		- user input number.
+	Yes -  Quantity:
+	- Same number as number of signs (default),
+	- user input number.
 
-		b. No > Hide any related info.
+	No > Hide any related info.
 
 	c. State (all states, default Western Australia):
 		a. If WA show Local Pickup Checkbox (hidden by default)
