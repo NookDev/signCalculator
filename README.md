@@ -39,9 +39,9 @@ INPUTS
 	- customizable with slider or input.
         - checkbox show / hide padding (default hidden)
 
-        d. Sign Colour.
+	d. Sign Colour.
 	- White (default),
-        - Black,
+	- Black,
 	- Red, Blue, Green, Yellow.
 
 --------------------------------------------------------------------------------------------------------------------------------
@@ -66,7 +66,7 @@ For each line the user can edit the text, change the line height, choose the hei
 	Include all the colors in the chart (see NookDigitalMarketing-Polymetric-Vinyl.JPG) as dropdown list with color name it’s  actual color eg. Deep Red is the color Deep Red. Open to discussing alternatives is you think there is a better way.
 	Default: black.
 
-        d2. Invert Color? (default: unchecked) - font color same as sign color, letter background font color. Expand past padding.
+	d2. Invert Color? (default: unchecked) - font color same as sign color, letter background font color. Expand past padding.
 	
 	e. Text Font – Dropdown with all Google Fonts available (alphabetical order).
 	Name of font to be in font eg. Book Antiqua is the font Book Antiqua. Text in demostration updated on selection change. Font selection is Google Fonts. 		- Default: Roboto.
