@@ -47,7 +47,15 @@
 </section>
 
 <section id="sign-demo">
+
 	<h2>Sign Demo <small>(example)</small></h2>
+	
+	<div class="demo-options">
+		<label>Hide Padding Guides</label>
+		<input type="checkbox" name="hide-padding" value="hide-padding">
+
+	</div>
+	
 	<div class="sign-demo">
 
 		<div class="demo-padding">
@@ -68,24 +76,21 @@
 			</div>
 		</div>
 	</div>
-	<div>
 	
-	<br>
-
-	<label>Hide Padding Guides</label>
-	<input type="checkbox" name="hide-padding" value="hide-padding">
 	
-	<br>
-	<br>
 	
-	<label>Distribution</label>
-
-	<input type="radio" name="distribution" value="space-between" checked><span>&nbsp;Space-Between&nbsp;</span>
-	<input type="radio" name="distribution" value="space-around"><span>&nbsp;Space-Around</span>
-
-	<input type="radio" name="distribution" value="space-evenly"><span>&nbsp;Space-Evenly</span>
-
+	<div class="demo-options">
+		<label>LINE DISTRIBUTION</label>
 	</div>
+		
+	<div class="demo-options">
+		
+		<input type="radio" name="distribution" value="space-between" checked><span>&nbsp;Space-Between&nbsp;</span>
+		<input type="radio" name="distribution" value="space-around"><span>&nbsp;Space-Around</span>
+
+		<input type="radio" name="distribution" value="space-evenly"><span>&nbsp;Space-Evenly</span>
+	</div>
+	
 </section>
 
 <section id="sign-text">
@@ -101,7 +106,7 @@
 			<div class="input-container">
 				<label>Example Line 1 :</label>
 				<input type="text" name="firstname" value="John's Electrical" class="line1">
-</div>
+			</div>
 
 			<div class="input-container font">
 				<label>Select Font</label>
@@ -116,12 +121,12 @@
 
 			<div class="input-container">
 				<label>Full Width Text?</label>
-				<input type="checkbox" name="full-width" value="full-width">Yes
+				<input type="checkbox" name="full-width" value="full-width" checked>Yes
 </div>
 
 			<div class="input-container">
-				<label>Letter Height (mm)</label>
-				<input type="number" name="quantity" min="1" max="300" value="30">
+				<label class="strikethrough-demo">Letter Height (mm)</label>
+				<input type="number" name="quantity" min="1" max="300" value="">
 </div>
 
 			<div class="input-container">
@@ -169,12 +174,12 @@
 
 			<div class="input-container">
 				<label>Full Width Text?</label>
-				<input type="checkbox" name="full-width" value="full-width" checked>Yes
+				<input type="checkbox" name="full-width" value="full-width">Yes
 			</div>
 
 			<div class="input-container">
-				<label class="strikethrough-demo">Letter Height (mm)</label>
-				<input type="number" name="quantity" min="1" max="300" value="">
+				<label>Letter Height (mm)</label>
+				<input type="number" name="quantity" min="1" max="300" value="30">
 			</div>
 
 			<div class="input-container">
@@ -332,14 +337,14 @@
 				<tr>
 					<th>Text</th>
 					<th>Font</th>
-					<th>Letter Height</th>
+					<th>Full Width</th>
 					<th>Colour</th>
 				</tr>
 
 				<tr>
 					<td>John's Electrical</td>
 					<td>Impact</td>
-					<td>30mm</td>
+					<td>Yes</td>
 					<td>Red</td>
 				</tr>
 			</table>
@@ -359,7 +364,7 @@
 				<tr>
 					<td>www.johnselectrical.com.au</td>
 					<td>Impact</td>
-					<td>100mm</td>
+					<td>30mm</td>
 					<td>Blue</td>
 					<td>Yes</td>
 				</tr>
@@ -372,7 +377,7 @@
 				<tr>
 					<th>Text</th>
 					<th>Font</th>
-					<th>Full Width</th>
+					
 					<th>Letter Height</th>
 					<th>Colour</th>
 				</tr>
@@ -380,7 +385,6 @@
 				<tr>
 					<td>Call 0435 567 654</td>
 					<td>Roboto</td>
-					<td>Yes</td>
 					<td>100mm</td>
 					<td>Black</td>
 				</tr>
@@ -393,12 +397,12 @@
 			<table class="text-summary">
 				<tr>
 					<th></th>
-					<th>White Signs</th>
+					<th>White Sign</th>
 
 					<th>3 Colours</th>
 
 					<th>Double Sided</th>
-					<th>Stands</th>
+					<th>Stand</th>
 
 					<th>Total</th>
 				</tr>

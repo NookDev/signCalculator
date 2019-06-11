@@ -1,14 +1,16 @@
 body{
   	background-color:darkgray;
-	font-family:helvetica
+	font-family:helvetica;
+	font-size:15px;
 }
 section{
-  max-width:800px;
-  margin:30px auto;
-  padding:15px;
-  border:1px solid lightblue;
-  background-color:#d7e2f4;
-  text-align:center
+	font-size:1rem;
+	max-width:53em;
+	margin:2em auto;
+	padding:1em;
+	border:1px solid lightblue;
+	background-color:#d7e2f4;
+	text-align:center
     
 }
 
@@ -18,10 +20,11 @@ ul{
   margin:auto;
   width:50%
 }
+
 .input-section{
-	margin-bottom:30px;
+	margin-bottom:2em;
   	border:1px solid lightgray;
-  	padding:15px;
+  	padding:1em;
   	background-color:#bacff2
 }
 .input-row{
@@ -30,9 +33,20 @@ ul{
   justify-content:space-between;
   align-items:center;
  }
+.input-container{
+  display:flex;
+  text-align:center;
+  flex-direction:column;
+  justify-content:space-around;
+  border:1px solid lightgray;
+  padding:.66em;
+  height:4em; 
+  background-color:white;
+}
+
 #sign-text .input-row{
   flex-wrap:nowrap;
-  justify-content:space-evenly;
+  justify-content:space-between;
 }
 #sign-options .input-row{
   flex-wrap:nowrap;
@@ -51,10 +65,12 @@ ul{
 label{
   text-transform:uppercase;
   font-weight:600;
+	
 }
 input, select{
-  margin:auto;
-text-align:center;
+	margin:auto;
+	text-align:center;
+	width:100%;
 }
 
 .radio{
@@ -65,28 +81,19 @@ text-align:center;
   text-decoration:line-through
 }
 
-.input-container{
-  display:flex;
-  text-align:center;
-  flex-direction:column;
-  justify-content:space-around;
-  border:1px solid lightgray;
-  padding:10px;
-  height:60px; 
-  background-color:white;
-}
+
 .summary-container{
   display:flex;
   flex-direction:column;
- margin-bottom:30px;
+ margin-bottom:2em;
   width:75%;
   align-items:center;
   
 }
 .text-summary td{
-  height:30px;
+  height:2em;
   border:1px solid black;
-  padding:5px 10px;
+  padding:0.33em 0.66em;
   background-color:white
 
  
@@ -102,11 +109,11 @@ text-align:center;
   flex-direction:row;
   justify-content:space-between;
   align-items:center;
-  padding-top:15px
+  padding-top:1em
 
 }
-.button-container *{
-  height:40px;
+.button-container{
+  height:3em;
   display:block;
   margin:0;
 
@@ -114,36 +121,52 @@ text-align:center;
   align-items:center;
   
 }
-
+.demo-options{
+    height: 4em;
+    margin: 1em;
+    display: flex;
+    width: 21em;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+.demo-options:last-of-type{
+    height: 2em;
+    padding-bottom: 2em;
+}
+.demo-options input{
+	width:4em;
+	padding-top:1em;
+}
 .line1, .demo-line-1{
   font-family:impact; 
   color:red
 }
 .demo-line-1{
-  font-size:3em
+  font-size:2.99em
 }
 .line2{
   background-color:blue;
 }
 
 .line2, .demo-line-2{
-  font-family:Calibri; 
+  font-family:calibri; 
   color:white;
   justify-content:middle
 }
 
 .demo-line-2{
-  font-size:2.2em;
+  font-size:1.4em;
 }
 .demo-line-2 div{
   background-color:blue;
   width:150%;
   position:absolute
-  
 }
 
+
 .line3, .demo-line-3{
-  font-family:calibri; 
+  font-family:roboto; 
  }
 .demo-line-3{
   font-size:4em;
@@ -161,14 +184,14 @@ text-align:center;
 }
 
 button{
-  margin-top:15px
+  margin-top:1em
 }
 .warning{
   color:red;
   font-weight:600;
-  font-size:1.3em;
+  font-size:1.1em;
   width:65%;
-  height:40px;
+  height:3em;
 }
 .warning2{
   
@@ -177,11 +200,11 @@ button{
 }
 
 .sign-demo{
-  width:300px;
-  height:200px;
+  width:20em;
+  height:14.8em;
   border: 1px solid lightgray;
   display:flex; 
-  padding:12.5px;
+  padding:1em;
   overflow:hidden;
   position:relative;
   margin:auto;
