@@ -1,5 +1,6 @@
 body{
-  background-color:darkgray
+  	background-color:darkgray;
+	font-family:helvetica
 }
 section{
   max-width:800px;
@@ -17,32 +18,35 @@ ul{
   margin:auto;
   width:50%
 }
+.input-section{
+	margin-bottom:30px;
+  	border:1px solid lightgray;
+  	padding:15px;
+  	background-color:#bacff2
+}
 .input-row{
   flex-wrap:wrap;
   display:flex;
   justify-content:space-between;
   align-items:center;
-  margin-bottom:30px;
-  border:1px solid lightgray;
-  padding:15px;
-  background-color:#bacff2
- 
  }
 #sign-text .input-row{
-  flex-wrap:wrap;
-  justify-content:space-evenly;
-}
-#sign-options .input-row{
-  flex-wrap:wrap;
-   justify-content:space-evenly;
-}
-#order-options .input-row{
   flex-wrap:nowrap;
   justify-content:space-evenly;
 }
-#order-summary{
-  flex-direction:column;
+#sign-options .input-row{
+  flex-wrap:nowrap;
+  justify-content:space-evenly;
+}
+#order-summary .input-row{
+ flex-direction:column;
  justify-content:space-evenly;
+ flex-wrap:nowrap
+}
+#order-option .input-row, #customer-details .input-row{
+ flex-direction:row;
+ justify-content:space-evenly;
+ flex-wrap:nowrap
 }
 label{
   text-transform:uppercase;

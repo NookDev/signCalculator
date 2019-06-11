@@ -69,170 +69,193 @@
 		</div>
 	</div>
 	<div>
-		<br>
+	
+	<br>
 
-		<label>Hide Padding Guides</label>
-		<input type="checkbox" name="hide-padding" value="hide-padding">
-		<br>
-		<br>
-		<label>Distribution</label>
+	<label>Hide Padding Guides</label>
+	<input type="checkbox" name="hide-padding" value="hide-padding">
+	
+	<br>
+	<br>
+	
+	<label>Distribution</label>
 
-		<input type="radio" name="distribution" value="space-between" checked><span>&nbsp;Space-Between&nbsp;</span>
-		<input type="radio" name="distribution" value="space-around"><span>&nbsp;Space-Around</span>
+	<input type="radio" name="distribution" value="space-between" checked><span>&nbsp;Space-Between&nbsp;</span>
+	<input type="radio" name="distribution" value="space-around"><span>&nbsp;Space-Around</span>
 
-		<input type="radio" name="distribution" value="space-evenly"><span>&nbsp;Space-Evenly</span>
+	<input type="radio" name="distribution" value="space-evenly"><span>&nbsp;Space-Evenly</span>
 
 	</div>
 </section>
-
 
 <section id="sign-text">
+
 	<h2>Add Lines of Text <small>(example)</small></h2>
-	<h3>Line 1</h3>
-	<div class="input-row">
-		<div class="input-container">
-			<label>Example Line 1 :</label>
-			<input type="text" name="firstname" value="John's Electrical" class="line1">
+	
+	<div class="input-section">
+	
+		<h3>Line 1</h3>
+
+		<div class="input-row">
+
+			<div class="input-container">
+				<label>Example Line 1 :</label>
+				<input type="text" name="firstname" value="John's Electrical" class="line1">
+</div>
+
+			<div class="input-container font">
+				<label>Select Font</label>
+				<select>
+				  <option value="Impact" selected>Impact</option>
+				  <option value="">All</option>
+				  <option value="">the</option>
+				   <option value="">google</option>
+				  <option value="">fonts</option>
+				</select>
+</div>
+
+			<div class="input-container">
+				<label>Full Width Text?</label>
+				<input type="checkbox" name="full-width" value="full-width">Yes
+</div>
+
+			<div class="input-container">
+				<label>Letter Height (mm)</label>
+				<input type="number" name="quantity" min="1" max="300" value="30">
+</div>
+
+			<div class="input-container">
+				<label>Colour</label>
+				<input type="color" name="polymetric-colors" value="#ff0000">
+</div>
+
+			<div class="input-container">
+				<label>Invert Colors?</label>
+				<input type="checkbox" name="inverted" value="inverted">Yes
+</div>
+
 		</div>
 
-		<div class="input-container font">
-			<label>Select Font</label>
-			<select>
-			  <option value="Impact" selected>Impact</option>
-			  <option value="">All</option>
-			  <option value="">the</option>
-			   <option value="">google</option>
-			  <option value="">fonts</option>
-			</select>
-		</div>
+		<div class="input-row">
 
-
-		<div class="input-container">
-			<label>Full Width Text?</label>
-			<input type="checkbox" name="full-width" value="full-width">Yes
-		</div>
-
-		<div class="input-container">
-			<label>Letter Height (mm)</label>
-			<input type="number" name="quantity" min="1" max="300" value="30">
-		</div>
-
-		<div class="input-container">
-			<label>Colour</label>
-			<input type="color" name="polymetric-colors" value="#ff0000">
-		</div>
-
-		<div class="input-container">
-			<label>Invert Colors?</label>
-			<input type="checkbox" name="inverted" value="inverted">Yes
-		</div>
-
-		<div class="button-container">
-			<div class="warning"></div>
-			<button>Add Another Line</button>
-			<button>Remove This Line</button>
+			<div class="button-container">
+				<div class="warning"></div>
+				<button>Add Another Line</button>
+				<button>Remove This Line</button>
+			</div>
 		</div>
 	</div>
+	
+	<div class="input-section">
+	
+		<h3>Line 2</h3>
+	
+		<div class="input-row">
+			<div class="input-container">
+				<label>Example Line 2 :</label>
+				<input type="text" name="firstname" value="www.johnselectrical.com.au" class="line2">
+			</div>
 
+			<div class="input-container font2">
+				<label>Select Font</label>
+				<select>
+				  <option value="Calibi" selected>Calibri</option>
+				  <option value="">All</option>
+				  <option value="">the</option>
+				   <option value="">google</option>
+				  <option value="">fonts</option>
+				</select>
+			</div>
 
+			<div class="input-container">
+				<label>Full Width Text?</label>
+				<input type="checkbox" name="full-width" value="full-width" checked>Yes
+			</div>
 
-	<h3>Line 2</h3>
-	<div class="input-row">
-		<div class="input-container">
-			<label>Example Line 2 :</label>
-			<input type="text" name="firstname" value="www.johnselectrical.com.au" class="line2">
+			<div class="input-container">
+				<label class="strikethrough-demo">Letter Height (mm)</label>
+				<input type="number" name="quantity" min="1" max="300" value="">
+			</div>
+
+			<div class="input-container">
+				<label>Colour</label>
+				<input type="color" name="polymetric-colors" value="#0000ff">
+			</div>
+
+			<div class="input-container">
+				<label>Invert Colors?</label>
+				<input type="checkbox" name="inverted" value="inverted" checked>Yes
+			</div>
+
 		</div>
 
-		<div class="input-container font2">
-			<label>Select Font</label>
-			<select>
-			  <option value="Calibi" selected>Calibri</option>
-			  <option value="">All</option>
-			  <option value="">the</option>
-			   <option value="">google</option>
-			  <option value="">fonts</option>
-			</select>
-		</div>
+		<div class="input-row">
 
-		<div class="input-container">
-			<label>Full Width Text?</label>
-			<input type="checkbox" name="full-width" value="full-width" checked>Yes
-		</div>
-
-		<div class="input-container">
-			<label class="strikethrough-demo">Letter Height (mm)</label>
-			<input type="number" name="quantity" min="1" max="300" value="">
-		</div>
-
-		<div class="input-container">
-			<label>Colour</label>
-			<input type="color" name="polymetric-colors" value="#0000ff">
-		</div>
-
-		<div class="input-container">
-			<label>Invert Colors?</label>
-			<input type="checkbox" name="inverted" value="inverted" checked>Yes
-		</div>
-
-		<div class="button-container">
-			<div class="warning"></div>
-			<button>Add Another Line</button>
-			<button>Remove This Line</button>
-		</div>
-
-	</div>
-
-	<h3>Line 3</h3>
-	<div class="input-row">
-
-		<div class="input-container">
-			<label>Example Line 3 :</label>
-			<input type="text" name="firstname" value="Call 0435 567 654" class="line3">
-		</div>
-
-		<div class="input-container font3">
-			<label>Select Font</label>
-			<select>
-			  <option value="Roboto" selected>Roboto</option>
-			  <option value="">All</option>
-			  <option value="">the</option>
-			   <option value="">google</option>
-			  <option value="">fonts</option>
-			</select>
-		</div>
-
-		<div class="input-container">
-			<label>Full Width Text?</label>
-			<input type="checkbox" name="full-width" value="full-width">Yes
-		</div>
-
-		<div class="input-container">
-			<label>Letter Height (mm)</label>
-			<input type="number" name="quantity" min="1" max="300" value="100">
-		</div>
-
-
-		<div class="input-container">
-			<label>Colour</label>
-			<input type="color" name="polymetric-colors">
-		</div>
-
-		<div class="input-container">
-			<label>Invert Colors?</label>
-			<input type="checkbox" name="inverted" value="inverted">Yes
-		</div>
-
-		<div class="button-container">
-			<div class="warning">WARNING - This line is outside the boundaries of the sign.</div>
-			<button>Add Another Line</button>
-			<button>Remove This Line</button>
+			<div class="button-container">
+				<div class="warning"></div>
+				<button>Add Another Line</button>
+				<button>Remove This Line</button>
+			</div>
 		</div>
 
 	</div>
+	
+	<div class="input-section">
+	
+		<h3>Line 3</h3>
+
+		<div class="input-row">
+
+			<div class="input-container">
+				<label>Example Line 3 :</label>
+				<input type="text" name="firstname" value="Call 0435 567 654" class="line3">
+			</div>
+
+			<div class="input-container font3">
+				<label>Select Font</label>
+				<select>
+				  <option value="Roboto" selected>Roboto</option>
+				  <option value="">All</option>
+				  <option value="">the</option>
+				   <option value="">google</option>
+				  <option value="">fonts</option>
+				</select>
+			</div>
+
+			<div class="input-container">
+				<label>Full Width Text?</label>
+				<input type="checkbox" name="full-width" value="full-width">Yes
+			</div>
+
+			<div class="input-container">
+				<label>Letter Height (mm)</label>
+				<input type="number" name="quantity" min="1" max="300" value="100">
+			</div>
+
+
+			<div class="input-container">
+				<label>Colour</label>
+				<input type="color" name="polymetric-colors">
+			</div>
+
+			<div class="input-container">
+				<label>Invert Colors?</label>
+				<input type="checkbox" name="inverted" value="inverted">Yes
+			</div>
+
+		</div>
+
+		<div class="input-row">
+
+			<div class="button-container">
+				<div class="warning">WARNING - This line is outside the boundaries of the sign.</div>
+				<button>Add Another Line</button>
+				<button>Remove This Line</button>
+			</div>
+		</div>
+	</div>
+	
 </section>
-
-
-
 
 <section id="order-options">
 	<h2>Order Options <small>(example)</small></h2>
@@ -271,7 +294,9 @@
 			<input type="checkbox" name="local-pickup" value="local-pickup">Yes
 		</div>
 	</div>
+</section>
 
+<section id="order-summary">
 	<h2>Order Summary <small>(example)</small></h2>
 	<div id="order-summary" class="input-row">
 		<div class="summary-container">
@@ -402,7 +427,9 @@
 
 		</div>
 	</div>
-
+</section>
+	
+<section id="customer-details">
 
 	<h2>Customer Details</h2>
 
