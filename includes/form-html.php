@@ -1,7 +1,7 @@
 <section id="sign-options">
 	<h2>Choose a Coreflute sign <small>(example)</small></h2>
 
-	<div class="input-row">
+	<div class="input-row  input-section">
 
 		<div class="input-container">
 			<label>Sign Size</label>
@@ -50,56 +50,60 @@
 
 	<h2>Sign Demo <small>(example)</small></h2>
 	
-	<div class="demo-options">
-		<label>Hide Padding Guides</label>
-		<input type="checkbox" name="hide-padding" value="hide-padding">
-
-	</div>
 	
-	<div class="sign-demo">
-
-		<div class="demo-padding">
-			<div class="sign-padding">
-
-				<div class="demo-line-1">
-					<div>John's Electrical</div>
-				</div>
-
-				<div class="demo-line-2">
-					<div>www.johnselectrical.com.au</div>
-				</div>
-
-				<div class="demo-line-3">
-					<div>Call 0435 567 654</div>
-				</div>
-
-			</div>
+		<div class="demo-options">
+			<label>Hide Padding Guides</label>
+			<input type="checkbox" name="hide-padding" value="hide-padding">
 		</div>
-	</div>
-	
-	
-	
-	<div class="demo-options">
-		<label>LINE DISTRIBUTION</label>
-	</div>
 		
-	<div class="demo-options">
-		
-		<input type="radio" name="distribution" value="space-between" checked><span>&nbsp;Space-Between&nbsp;</span>
-		<input type="radio" name="distribution" value="space-around"><span>&nbsp;Space-Around</span>
+		<div class="input-section">
+	
+			<div class="sign-demo">
 
-		<input type="radio" name="distribution" value="space-evenly"><span>&nbsp;Space-Evenly</span>
-	</div>
+			<div class="demo-padding">
+				<div class="sign-padding">
+
+					<div class="demo-line-1">
+						<div>John's Electrical</div>
+					</div>
+
+					<div class="demo-line-2">
+						<div>www.johnselectrical.com.au</div>
+					</div>
+
+					<div class="demo-line-3">
+						<div>Call 0435 567 654</div>
+					</div>
+
+				</div>
+			</div>
+</div>
+		
+		</div>
+
+		<div class="demo-options ">
+			<label>LINE DISTRIBUTION</label>
+		</div>
+
+		<div class="demo-options">
+
+			<input type="radio" name="distribution" value="space-between" checked><span>&nbsp;Space-Between&nbsp;</span>
+			<input type="radio" name="distribution" value="space-around"><span>&nbsp;Space-Around</span>
+
+			<input type="radio" name="distribution" value="space-evenly"><span>&nbsp;Space-Evenly</span>
+		</div>
+	
+	
 	
 </section>
 
 <section id="sign-text">
 
-	<h2>Add Lines of Text <small>(example)</small></h2>
-	
+	<h2>Add Text <small>(example)</small></h2>
+		<h3>Line 1</h3>
 	<div class="input-section">
 	
-		<h3>Line 1</h3>
+	
 
 		<div class="input-row">
 
@@ -150,10 +154,8 @@
 			</div>
 		</div>
 	</div>
-	
-	<div class="input-section">
-	
 		<h3>Line 2</h3>
+	<div class="input-section">
 	
 		<div class="input-row">
 			<div class="input-container">
@@ -205,9 +207,11 @@
 
 	</div>
 	
+	<h3>Line 3</h3>
+	
 	<div class="input-section">
 	
-		<h3>Line 3</h3>
+		
 
 		<div class="input-row">
 
@@ -265,7 +269,7 @@
 <section id="order-options">
 	<h2>Order Options <small>(example)</small></h2>
 
-	<div class="input-row">
+	<div class="input-row  input-section">
 
 		<div class="input-container">
 			<label>Add Sign Stands?</label>
@@ -302,10 +306,12 @@
 </section>
 
 <section id="order-summary">
+
 	<h2>Order Summary <small>(example)</small></h2>
+	
 	<div id="order-summary" class="input-row">
-		<div class="summary-container">
-			<h3>Sign Details</h3>
+		<div class="summary-container input-section">
+			
 			<table class="text-summary">
 				<tr>
 					<th>Size</th>
@@ -329,10 +335,10 @@
 					<td>Yes</td>
 				</tr>
 			</table>
-			<div></div>
 		</div>
-		<div class="summary-container">
-			<h3>Line 1</h3>
+		<h3>Line 1</h3>
+		<div class="summary-container  input-section">
+			
 			<table class="text-summary">
 				<tr>
 					<th>Text</th>
@@ -349,9 +355,9 @@
 				</tr>
 			</table>
 		</div>
-
-		<div class="summary-container">
-			<h3>Line 2</h3>
+		<h3>Line 2</h3>
+		<div class="summary-container  input-section">
+			
 			<table class="text-summary">
 				<tr>
 					<th>Text</th>
@@ -370,9 +376,9 @@
 				</tr>
 			</table>
 		</div>
-
-		<div class="summary-container">
-			<h3>Line 3</h3>
+		<h3>Line 3</h3>
+		<div class="summary-container  input-section">
+			
 			<table class="text-summary">
 				<tr>
 					<th>Text</th>
@@ -391,9 +397,9 @@
 			</table>
 
 		</div>
-
-		<div class="summary-container">
-			<h3>Costs</h3>
+		<h3>Costs</h3>
+		<div class="summary-container  input-section">
+			
 			<table class="text-summary">
 				<tr>
 					<th></th>
@@ -437,7 +443,7 @@
 
 	<h2>Customer Details</h2>
 
-	<div class="input-row">
+	<div class="input-row input-section">
 
 
 		<div class="input-container">

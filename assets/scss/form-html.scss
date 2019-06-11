@@ -27,11 +27,13 @@ ul{
   	padding:1em;
   	background-color:#bacff2
 }
+.input-section h3{
+	color:white 
+}
 .input-row{
   flex-wrap:wrap;
   display:flex;
   justify-content:space-between;
-  align-items:center;
  }
 .input-container{
   display:flex;
@@ -78,17 +80,15 @@ input, select{
   align-items:center;
 }
 .strikethrough-demo{
-  text-decoration:line-through
+  text-decoration:line-through;
 }
 
 
 .summary-container{
-  display:flex;
-  flex-direction:column;
- margin-bottom:2em;
-  width:75%;
-  align-items:center;
-  
+	display:flex;
+	flex-direction:column;
+	margin-bottom:2em;
+	align-items: unset;
 }
 .text-summary td{
   height:2em;
@@ -183,15 +183,11 @@ input, select{
   font-family:roboto
 }
 
-button{
-  margin-top:1em
-}
 .warning{
   color:red;
   font-weight:600;
   font-size:1.1em;
   width:65%;
-  height:3em;
 }
 .warning2{
   
