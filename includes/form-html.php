@@ -3,16 +3,18 @@
 
 	<div class="input-row  input-section">
 
-		<div class="input-container sizeOfSign">
+		<!-- sizeOfSign -->
+		<div class="input-container">
 			<label>Sign Size</label>
-			<select>
+			<select class="sizeOfSign">
 			  <option value="200mmx300mm">200mm x 300mm</option>
 			  <option value="400mmx600mm" selected>400mm x 600mm </option>
 			  <option value="600mmx800mm">600mm x 800mm</option>
 			</select> 
 			<span class="label">Height x Width</span>
 		</div>
-
+		
+		<!-- signOrientation -->
 		<div class="input-container signOrientation">
 			<label>Sign Orientation</label>
 			
@@ -20,25 +22,27 @@
 			
 				 <span>&nbsp;Landscape&nbsp;</span>
 
-				 <input type="radio" name="orientation" value="vertical" checked >
+				 <input type="radio" name="signOrientation" value="landscape" checked >
 
 
 				<span>&nbsp;Portrait</span>
 
-				<input type="radio" name="orientation" value="horizontal">
+				<input type="radio" name="signOrientation" value="portrait">
 			
 			</div>
 		</div>
 
-		<div class="input-container signPadding">
+		<!-- signPadding -->
+		<div class="input-container">
 			<label for="padding">Sign Padding</label>
-			<input type="range" name="padding" min="25" max="2500"> 
-			<span class="label">25mm</span>
+			<input type="range" class="signPadding" name="signPadding" min="10" max="90" value="50"> 
+			<span class="signPaddingLabel"></span>
 		</div>
 
-		<div class="input-container signColour">
+		<!-- signColour -->
+		<div class="input-container">
 			<label>Sign Colour</label>
-			<select>
+			<select class="signColour">
 			  <option value="white" selected>White</option>
 			  <option value="black ">Black</option>
 			  <option value="red">Red</option>
@@ -47,9 +51,10 @@
 			</select>
 		</div>
 
+		<!-- doubleSided-->
 		<div class="input-container doubleSided">
 			<label>Double Sided?</label>
-			<input type="checkbox" name="double-sided" value="double-sided" checked>
+			<input type="checkbox" name="doubleSided" value="double sided" checked>
 			<span class="label">Yes</span>
 		</div>
 
@@ -62,7 +67,7 @@
 	
 		<div class="demo-options">
 			<label>Hide Padding Guides</label>
-			<input type="checkbox" name="hide-padding" value="hide-padding">
+			<input type="checkbox" name="hidePadding" value="hide padding" class="hidePadding">
 		</div>
 		
 		<div class="input-section">
@@ -90,20 +95,20 @@
 		
 		</div>
 
-		<div class="demo-options hidePadding">
+		<div class="demo-options">
 			<label>LINE DISTRIBUTION</label>
 		</div>
 
 		<div class="demo-options demo-options2 lineDistribution">
 		
 			<span>&nbsp;Space-Between&nbsp;</span>	
-			<input type="radio" name="distribution" value="space-between" checked>
+			<input type="radio" name="lineDistribution" value="space-between" checked>
 			
 			<span>&nbsp;Space-Around</span>
-			<input type="radio" name="distribution" value="space-around">
+			<input type="radio" name="lineDistribution" value="space-around">
 
 			<span>&nbsp;Space-Evenly</span>
-			<input type="radio" name="distribution" value="space-evenly">
+			<input type="radio" name="lineDistribution" value="space-evenly">
 		</div>
 	
 	
@@ -304,14 +309,14 @@
 		<div class="input-section accordion-content" style="display: block;">	
 			<div class="input-row">
 
-				<div class="input-container lineText">
+				<div class="input-container">
 					<label>Example Line 1 :</label>
-					<input type="text" name="firstname" value="John's Electrical" class="line1">
+					<input type="text" name="lineText" value="John's Electrical" class="lineText">
 				</div>
 
-				<div class="input-container lineFont font">
+				<div class="input-container font">
 					<label>Select Font</label>
-					<select>
+					<select class="lineFont">
 					  <option value="Impact" selected>Impact</option>
 					  <option value="">All</option>
 					  <option value="">the</option>
@@ -320,25 +325,25 @@
 					</select>
 	</div>
 
-				<div class="input-container fullWidth">
+				<div class="input-container">
 					<label>Full Width Text?</label>
-					<input type="checkbox" name="full-width" value="full-width" checked>
+					<input type="checkbox" name="fullWidth" value="full width" class="fullWidth" checked>
 					<span class="label">Yes</span>
 	</div>
 
-				<div class="input-container letterHeight">
-					<label class="strikethrough-demo letterLabel">Letter Height (mm)</label>
-					<input type="number" name="quantity" min="1" max="300" value="">
+				<div class="input-container">
+					<label class="strikethrough-demo letterHeightLabel">Letter Height (mm)</label>
+					<input type="number" name="letterHeight" min="1" max="300" value="" class="letterHeight">
 	</div>
 
-				<div class="input-container vinylColour">
+				<div class="input-container">
 					<label>Colour</label>
-					<input type="color" name="polymetric-colors" value="#ff0000">
+					<input type="color" name="vinylColour" value="#ff0000" class="vinylColour">
 				</div>
 
-				<div class="input-container invertColour">
+				<div class="input-container">
 					<label>Invert Colors?</label>
-					<input type="checkbox" name="inverted" value="inverted">
+					<input type="checkbox" name="invertColour" value="inverted" class="invertColour">
 					<span class="label">Yes</span>
 	</div>
 
@@ -362,22 +367,25 @@
 
 	<div class="input-row  input-section">
 
+		<!-- signStands -->
 		<div class="input-container signStands">
 			<label>Add Sign Stands?</label>
 			<span class="radio">
-			 <input type="radio" name="orientation" value="vertical" checked><span>&nbsp;Yes&nbsp;</span>
-			<input type="radio" name="orientation" value="horizontal"><span>&nbsp;No</span>
+			 <input type="radio" name="signStands" value="no" checked><span>&nbsp;No&nbsp;</span>
+			<input type="radio" name="signStands" value="yes"><span>&nbsp;Yes</span>
 			</span>
 		</div>
 
-		<div class="input-container signQuantity">
+		<!-- signQuantity -->
+		<div class="input-container">
 			<label>Sign Quantity</label>
-			<input type="number" name="quantity" min="1" max="300" value="10">
+			<input type="number" name="signQuantity" min="1" max="300" value="10" class="signQuantity">
 		</div>
 
-		<div class="input-container signLocation">
+		<!-- signLocation -->
+		<div class="input-container">
 			<label>Location</label>
-			<select>
+			<select class="signLocation">
 			  <option value="WA" selected>WA</option>
 			  <option value="">NSW</option>
 			  <option value="">NT</option>
@@ -389,9 +397,10 @@
 			</select>
 		</div>
 
-		<div class="input-container localPickup">
+		<!-- localPickup -->
+		<div class="input-container">
 			<label>Local Pickup?</label>
-			<input type="checkbox" name="local-pickup" value="local-pickup">
+			<input type="checkbox" name="localPickup" value="local pickup" class="localPickup">
 			<span class="label">Yes</span>
 		</div>
 	</div>

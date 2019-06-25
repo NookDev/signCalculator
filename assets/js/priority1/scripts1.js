@@ -1,40 +1,216 @@
-//SIGN OPTIONS VARIABLES
-let sizeOfSign = document.getElementsByClassName('sizeOfSign').value;
-let signOrientation = document.getElementsByClassName('signOrientation').value;
-let signPadding = document.getElementsByClassName('signPadding').value;
-let signColour = document.getElementsByClassName('signColour').value;
-let doubleSided = document.getElementsByClassName('doubleSided').value;
+//value objects
+let signObject;
+let demoObject;
+let lineObject;
+let optionsObject;
+let summaryObject;
 
-//DEMO VARIABLES
+// *** SIGN OPTIONS *** //
+
+//sizeOfSign
+let sizeOfSign = document.querySelector('.sizeOfSign');
+let sizeOfSignValue = sizeOfSign.options[sizeOfSign.selectedIndex].value;
+let sizeOfSignText = sizeOfSign.options[sizeOfSign.selectedIndex].text;
+//debugging
+//console.log('sizeOfSign '+sizeOfSign);
+//console.log('sizeOfSigntext = '+sizeOfSignText);
+console.log('sizeOfSignvalue = '+sizeOfSignValue);
+
+
+//signOrientation
+let signOrientation = document.querySelector('input[name="signOrientation"]');
+let signOrientationValue = document.querySelector('input[name="signOrientation"]:checked').value;
+//debugging
+console.log('signOrientationValue = '+signOrientationValue);
+
+
+//signPadding
+let signPadding = document.querySelector('.signPadding');
+let signPaddingValue = document.querySelector('input[name="signPadding"]').value;
+document.querySelector('.signPaddingLabel').innerHTML = signPaddingValue; // Display the default slider value
+// Update the current slider value (each time you drag the slider handle)
+signPadding.oninput = function() {
+  document.querySelector('.signPaddingLabel').innerHTML = this.value;
+	
+	//update
+	signPaddingValue = this.value;
+	
+	//debugging
+	console.log('signPadding = '+signPaddingValue);	
+}
+//debugging
+console.log('signPadding = '+signPaddingValue);
+
+
+//signColour
+let signColour = document.querySelector('.signColour');
+let signColourValue = signColour.options[signColour.selectedIndex].value;
+//debugging
+console.log('signColourValue = '+signColourValue);
+
+
+//doubleSided
+let doubleSided = document.querySelector('.doubleSided');
+let doubleSidedValue = document.querySelector('input[name="doubleSided"]:checked').value;
+//debugging
+console.log('doubleSidedValue = '+doubleSidedValue);
+
+
+//store values
+(function createSignObject(){
+	
+	//create object, add input values
+	signObject = { };
+	signObject.sizeOfSign = sizeOfSignValue;
+	signObject.signOrientation = signOrientationValue;
+	signObject.signPadding = signPaddingValue;
+	signObject.signColour = signColourValue;
+	signObject.doubleSided = doubleSidedValue;
+	
+	let signObjectKeys = Object.keys(signObject);
+	let signObjectValues = Object.values(signObject);
+	let signObjectEntries = Object.entries(signObject);
+	
+	//debugging
+	//console.log('entrie ='+signObject.sizeOfSign);
+		
+})();
+
+
+
+// ***  DEMO VARIABLES *** //
+
 let demoSign = document.getElementsByClassName('demoSign');
 let demoGuides = document.getElementsByClassName('demoGuides');
 let demoPadding = document.getElementsByClassName('demoPadding');
-let hidePadding = document.getElementsByClassName('hidePadding').value;
-let lineDistribution = document.getElementsByClassName('lineDistribution').value;
 
 //LINE INPUT VARIABLES
+
+let hidePadding = document.querySelector('.hidePadding');
+let hidePaddingValue = document.querySelector('input[name="hidePadding"]').value;
+//debugging
+console.log('hidePaddingValue = '+hidePaddingValue);
+
+
+let lineDistribution = document.querySelector('input[name="lineDistribution"]');
+let lineDistributionValue = document.querySelector('input[name="lineDistribution"]:checked').value;
+//debugging
+console.log('lineDistributionValue = '+lineDistributionValue);
+
+
+//create object, add input values
+(function createDemoObject(){
+	let demoObject = { };
+	demoObject.demoSign = demoSign;
+	demoObject.demoGuides = demoGuides;
+	demoObject.demoPadding = demoPadding;
+	demoObject.hidePadding = hidePaddingValue;
+	demoObject.lineDistribution = lineDistributionValue;
+})();
+
+
+// *** LINE INPUT VARIABLES *** //
+
 let lineNumber = document.querySelectorAll('.lineNumber');
-let letterLabel = document.getElementsByClassName('letterLabel');
-let lineText = document.getElementsByClassName('lineText').value;
-let lineFont = document.getElementsByClassName('lineFont').value;
-let fullWidth = document.getElementsByClassName('fullWidth');
-let letterHeight = document.getElementsByClassName('letterHeight');
-let vinylColour = document.getElementsByClassName('vinylColour').value;
-let invertColour = document.getElementsByClassName('invertColour').value;
+let lineNumberValue = lineNumber.length;
+//debugging
+console.log('lineNumberValue = '+lineNumberValue);
+
+let lineText = document.querySelector('.lineText');
+let lineTextValue = document.querySelector('input[name="lineText"]').value;
+//debugging
+console.log('lineTextValue = '+lineTextValue);
+
+let lineFont = document.querySelector('.lineFont');
+let lineFontValue = lineFont.options[lineFont.selectedIndex].value;
+//debugging
+console.log('lineFontValue = '+lineFontValue);
+
+let fullWidth = document.querySelector('.fullWidth');
+let fullWidthValue = document.querySelector('input[name="fullWidth"]:checked').value;
+//debugging
+console.log('fullWidthValue = '+fullWidthValue);
+
+let letterHeight = document.querySelector('.letterHeight');
+let letterHeightValue = document.querySelector('input[name="letterHeight"]').value;
+//debugging
+console.log('letterHeightValue = '+letterHeightValue);
+
+let vinylColour = document.querySelector('.vinylColour');
+let vinylColourValue = document.querySelector('input[name="vinylColour"]').value;
+//debugging
+console.log('vinylColourValue = '+vinylColourValue);
+
+let invertColour = document.querySelector('.invertColour');
+let invertColourValue = document.querySelector('input[name="invertColour"]').value;
+//debugging
+console.log('invertColourValue = '+invertColourValue);
+
 let	addButton = document.querySelectorAll('.addLine');
 let removeButton = document.querySelectorAll('.removeLine');
 
-//OPTIONS VARIABLES
-let signStands = document.getElementsByClassName('signStands').value;
-let signQuantity = document.getElementsByClassName('signQuantity').value;
-let signLocation = document.getElementsByClassName('signLocation').value;
-let localPickup = document.getElementsByClassName('localPickup').value;
 
-//SUMMARY VARIABLES TODO
+//store values
+(function createLineObject(){
+	let lineObject = { };
+	lineObject.lineNumber = lineNumberValue;
+	lineObject.lineText = lineTextValue;
+	lineObject.lineFont = lineFontValue;
+	lineObject.fullWidth = fullWidthValue;
+	lineObject.letterHeight = letterHeightValue;
+	lineObject.vinylColour = vinylColourValue;
+	lineObject.invertColour = invertColourValue;
+})();
+
+
+// *** OPTIONS VARIABLES *** //
+
+let signStands = document.querySelector('.signStands');
+let signStandsValue = document.querySelector('input[name="signStands"]').value;
+//debugging
+console.log('signStandsValue = '+signStandsValue);
+
+let signQuantity = document.querySelector('.signQuantity');
+let signQuantityValue = document.querySelector('input[name="signQuantity"]').value;
+//debugging
+console.log('signQuantityValue = '+signQuantityValue);
+
+let signLocation = document.querySelector('.signLocation');
+let signLocationValue = signLocation.options[signLocation.selectedIndex].value;
+//debugging
+console.log('signLocationValue = '+signLocationValue);
+
+let localPickup = document.querySelector('.localPickup');
+let localPickupValue = document.querySelector('input[name="localPickup"]').value;
+
+//debugging
+console.log('localPickupValue = '+localPickupValue);
+
+//store values
+(function createOptionsObject(){
+	let optionsObject = { };
+	optionsObject.signQuantity = signQuantityValue;
+	optionsObject.signLocation = signLocationValue;
+	optionsObject.localPickup = localPickupValue;
+	optionsObject.signStands = signStandsValue;
+})();
+
+//// *** SUMMARY VARIABLES TODO *** //
+
 let signWidth;
 let signHeight;
 
-//line variables
+//create object, add input values
+(function createSummaryObject(){
+	let summaryObject = { };
+	summaryObject.numberOfLines = numberOfLines;
+	summaryObject.signWidth = signWidth;
+	summaryObject.signHeight = signHeight;
+})();
+
+
+// *** LINE VARIABLES  *** //
+
 //let lineNumber = document.querySelectorAll('.lineNumber');
 let accordionTitle = document.getElementsByClassName('accordion-title');
 let numberOfLines = lineNumber.length; 
@@ -51,49 +227,19 @@ let lineOptions;
 const accordionItems = document.querySelectorAll('.accordion-item');
 const accordionContentPanes = document.querySelectorAll('.accordion-content');
 
-
-
 //create object, add input values
-let signObject = { };
-signObject.sizeOfSign = sizeOfSign;
-signObject.signOrientation = signOrientation;
-signObject.signPadding = signPadding;
-signObject.signColour = signColour;
-signObject.doubleSided = doubleSided;
+(function createLineObject(){
+	let lineObject = { };
+	lineObject.lineNumber = lineNumberValue;
+	lineObject.lineText = lineTextValue;
+	lineObject.lineFont = lineFontValue;
+	lineObject.fullWidth = fullWidthValue;
+	lineObject.vinylColour = vinylColourValue;
+	lineObject.invertColour = invertColourValue;
+	lineObject.addButton = addButton;
+	lineObject.removeButton = removeButton;
+})()
 
-//create object, add input values
-let demoObject = { };
-demoObject.demoSign = demoSign;
-demoObject.demoGuides = demoGuides;
-demoObject.demoPadding = demoPadding;
-demoObject.lineNumber = lineNumber;
-demoObject.hidePadding = hidePadding;
-demoObject.lineDistribution = lineDistribution;
-
-//create object, add input values
-let lineObject = { };
-lineObject.letterLabel = letterLabel;
-lineObject.lineText = lineText;
-lineObject.lineFont = lineFont;
-lineObject.fullWidth = fullWidth;
-lineObject.vinylColour = vinylColour;
-lineObject.invertColour = invertColour;
-lineObject.addButton = addButton;
-lineObject.removeButton = removeButton;
-
-
-//create object, add input values
-let optionsObject = { };
-optionsObject.signQuantity = signQuantity;
-optionsObject.signLocation = signLocation;
-optionsObject.localPickup = localPickup;
-optionsObject.signStands = signStands;
-
-//create object, add input values
-let summaryObject = { };
-summaryObject.numberOfLines = numberOfLines;
-summaryObject.signWidth = signWidth;
-summaryObject.signHeight = signHeight;
 
 
 //all value objects in an array
@@ -145,7 +291,6 @@ function getLineData(){
 //SIGN LINES
 
 
-
 //line functions
 (function lineGeneration(){
 	
@@ -167,7 +312,7 @@ function getLineData(){
 					//hide add button of latest line
 					self.style = "visibility: hidden;";
 					
-				  //console.log(self.classList);
+					//console.log(self.classList);
 					
 					//clone new line after the last line
 					lastLine.parentElement.appendChild(lineOptions.cloneNode(true));
@@ -215,29 +360,29 @@ function getLineData(){
 				 lastLineAddButton = lastLine.querySelector('.addLine');
 				 lastLineRemoveButton = lastLine.querySelectorAll('.removeLine');
 
-					//no remove button when one line
+				//no remove button when one line
+				firstLineRemoveButton.style = "visibility: hidden;";
+
+				//always an add button on the last line
+				lastLineAddButton.style = "visibility: visible;";
+
+				if (numberOfLines > 1 ){
+					firstLineRemoveButton.style = "visibility: visible;";
+					firstLineAddButton.style = "visibility: hidden;";
+				}
+				if (numberOfLines == 1 ){
+
 					firstLineRemoveButton.style = "visibility: hidden;";
-			
-					//always an add button on the last line
-					lastLineAddButton.style = "visibility: visible;";
 
-					if (numberOfLines > 1 ){
-						firstLineRemoveButton.style = "visibility: visible;";
-						firstLineAddButton.style = "visibility: hidden;";
-					}
-					if (numberOfLines == 1 ){
-						
-						firstLineRemoveButton.style = "visibility: hidden;";
+					//add button on the first line if only line
+					firstLineAddButton.style = "visibility: visible;";
 
-						//add button on the first line if only line
-						firstLineAddButton.style = "visibility: visible;";
+				};
 
-					};
-
-					//ensure there is always an add button on the last line
-					let newLastLineAddButton = lastLine.querySelector('.addLine');
-					//the key
-					newLastLineAddButton.style = "visibility : visible";
+				//ensure there is always an add button on the last line
+				let newLastLineAddButton = lastLine.querySelector('.addLine');
+				//the key
+				newLastLineAddButton.style = "visibility : visible";
 
 };
 
@@ -251,29 +396,29 @@ function getLineData(){
 				if (hasClass(e.target, 'accordion-title')) {
 						//accordionTitle[i].addEventListener("click", function(event) {
 
-								//this
-									let self = event.target;
+						//this
+						let self = event.target;
 
-									/* Toggle between adding and removing the "active" class,
-									to highlight the button that controls the panel */
-									self.classList.toggle("active");
+						/* Toggle between adding and removing the "active" class,
+						to highlight the button that controls the panel */
+						self.classList.toggle("active");
 
-									console.log('this.classList = '+self.classList);
-									console.log('accordionTitle = '+accordionTitle);
-									//refresh
+						console.log('this.classList = '+self.classList);
+						console.log('accordionTitle = '+accordionTitle);
+						//refresh
 
-									/* Toggle between hiding and showing the active panel */
-									let panel = self.nextElementSibling;
+						/* Toggle between hiding and showing the active panel */
+						let panel = self.nextElementSibling;
 
-									if (panel.style.display === "block") {
-										panel.style.display = "none";
+						if (panel.style.display === "block") {
+							panel.style.display = "none";
 
-									} else {
-										panel.style.display = "block";
-									}		
-					
-								
-							}
+						} else {
+							panel.style.display = "block";
+						}		
+
+
+					}
 			})
 		})()
 
@@ -295,38 +440,38 @@ function getLineData(){
 
 				<div class="input-row">
 
-				<div class="input-container lineText">
+				<div class="input-container">
 				<label>Example Line ${lineCount} :</label>
-				<input type="text" name="firstname" value="" class="line1">
+				<input type="text" name="lineText" value="" class="lineText">
 				</div>
 
-				<div class="input-container lineFont font">
+				<div class="input-container  font">
 				<label>Select Font</label>
-				<select>
+				<select class="lineFont">
 				<option value="Impact" selected>Impact</option>
 
 				</select>
 				</div>
 
-				<div class="input-container fullWidth">
+				<div class="input-container">
 				<label>Full Width Text?</label>
-				<input type="checkbox" name="full-width" value="full-width">
+				<input type="checkbox" name="fullWidth" value="full width" class="fullWidth">
 				<span class="label">Yes</span>
 				</div>
 
-				<div class="input-container letterHeight">
-				<label>Letter Height (mm)</label>
-				<input type="number" name="quantity" min="1" max="300" value="">
+				<div class="input-container">
+				<label class="letterHeightLabel">Letter Height (mm)</label>
+				<input type="number" name="letterHeight" min="1" max="300" value="" class="letterHeight">
 				</div>
 
-				<div class="input-container vinylColour">
+				<div class="input-container">
 				<label>Colour</label>
-				<input type="color" name="polymetric-colors" value="">
+				<input type="color" name="vinylColour" value="" class="vinylColour">
 				</div>
 
-				<div class="input-container invertColour">
+				<div class="input-container">
 				<label>Invert Colors?</label>
-				<input type="checkbox" name="inverted" value="inverted">
+				<input type="checkbox" name="invertColour" value="inverted" class="invertColour">
 				<span class="label">Yes</span>
 				</div>
 
@@ -350,7 +495,7 @@ function getLineData(){
 (function testFunction(){
 let button = document.getElementById('test');
 	
-  console.log('lineNumber = ' + lineNumber);
+  //console.log('lineNumber = ' + lineNumber);
 	console.log('numberOfLines = ' + numberOfLines);
 	
 	button.addEventListener( "click", testFunction );
@@ -370,16 +515,17 @@ function removeClass(el, unWantedClass) {
 	el.classList.remove(unWantedClass);
 }
 
+let letterHeightLabel = document.querySelector('.letterHeightLabel');
 
 if (fullWidth == 'checked') {
 
 	//letterHeight.style = "visibility : hidden";
-	letterLabel.style = "text-decoration : strike-through";
+	letterHeightLabel.style = "text-decoration : strike-through";
 	letterHeight.value = " ";
 
 } else 
 {
 
 	//letterHeight.style = "visibility : visible";
-	letterLabel.style = "text-decoration : unset";
+	letterHeightLabel.style = "text-decoration : unset";
 }
