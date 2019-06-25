@@ -1,0 +1,59 @@
+.accordion-title{cursor:pointer; display:flex}
+
+.accordion-title:hover{background-color:grey;}
+
+.accordion-item {
+	//overflow:hidden;
+
+  &.active {
+
+    .accordion-title-row .accordion-arrow {
+      transform: rotate(-180deg);
+      transition: ease .3s transform;
+    }
+
+    .accordion-content {
+      transition: ease .3s all;
+      animation-name: fadeIn;
+      animation-duration: .6s;
+      animation-fill-mode: both;
+      will-change: transform;
+    }
+  }
+}
+
+
+.fade-in {
+  animation-name: fadeIn;
+  animation-duration: .6s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

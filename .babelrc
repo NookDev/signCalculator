@@ -1,0 +1,6 @@
+// .babelrc
+{
+  "minified": true,
+  "comments": false,
+  "plugins": ["@babel/plugin-transform-template-literals"]
+}

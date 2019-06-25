@@ -5,7 +5,7 @@ body{
 }
 section{
 	font-size:1rem;
-	max-width:53em;
+	max-width:80em;
 	margin:2em auto;
 	padding:1em;
 	border:1px solid lightblue;
@@ -13,7 +13,10 @@ section{
 	text-align:center
     
 }
-
+h1{
+	text-align: center;
+	margin:2em 0;
+}
 ul{
   list-style-type:none;
   text-align:left;
@@ -33,16 +36,16 @@ ul{
 .input-row{
   flex-wrap:wrap;
   display:flex;
-  justify-content:space-between;
+  justify-content:space-between
  }
 .input-container{
   display:flex;
   text-align:center;
   flex-direction:column;
-  justify-content:space-around;
+  justify-content:space-between;
   border:1px solid lightgray;
   padding:.66em;
-  height:4em; 
+ // height:5em; 
   background-color:white;
 }
 
@@ -67,22 +70,31 @@ ul{
 label{
   text-transform:uppercase;
   font-weight:600;
-	
+	margin: 0 0 .5em 0	
 }
+.label{
+	margin-top:0.5em
+}//for second label under inputs
+
 input, select{
 	margin:auto;
 	text-align:center;
-	width:100%;
+	
 }
 
 .radio{
   display:flex;
   align-items:center;
+	margin: 1em 0;
+	
+}
+.radio input{
+  	width: unset;
+	margin: 0 .5em;
 }
 .strikethrough-demo{
   text-decoration:line-through;
 }
-
 
 .summary-container{
 	display:flex;
@@ -98,6 +110,11 @@ input, select{
 
  
 }
+.summary-totals td:first-of-type, .summary-totals th:first-of-type{
+
+  border:0;
+  background-color:unset
+}
 .text-summary th{
   height:30px;
 
@@ -112,31 +129,35 @@ input, select{
   padding-top:1em
 
 }
-.button-container{
-  height:3em;
-  display:block;
-  margin:0;
+.button-container button{
+	height: 2.7em;
+  	margin:0;
 
-  display:flex;
-  align-items:center;
-  
 }
 .demo-options{
     height: 4em;
     margin: 1em;
     display: flex;
-    width: 21em;
+    width: 22em;
     margin: auto;
     align-items: center;
     justify-content: center;
+}
+.demo-options2{  
+    width: 30em;
+ 
 }
 .demo-options:last-of-type{
     height: 2em;
     padding-bottom: 2em;
 }
 .demo-options input{
-	width:4em;
 	padding-top:1em;
+	margin-right: 0;
+}
+.demo-options2 input{  
+	margin-left: 0.5em;
+    margin-right: 1em;
 }
 .line1, .demo-line-1{
   font-family:impact; 
@@ -192,10 +213,10 @@ input, select{
 .warning2{
   
   width:100%;
- 
+ padding: 1em 0;
 }
 
-.sign-demo{
+.demoSign{
   width:20em;
   height:14.8em;
   border: 1px solid lightgray;
@@ -206,20 +227,19 @@ input, select{
   margin:auto;
   background-color:white;
 }
-.demo-padding{
+.demoGuides{
   border: 1px dashed grey;
   width:100%;
  
 }
-.sign-padding{
+.demoPadding{
   height:100%;
   text-align:center;
   display:flex;
   flex-direction:column;
   justify-content:space-between; 
 }
-.sign-padding > div{
-    flex: 1;
+.demoPadding > div{
     display:flex;
     justify-content:center;
     align-items:center

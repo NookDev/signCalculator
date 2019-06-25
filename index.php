@@ -8,6 +8,13 @@
 
     </head>
     <body>
+       <h1>Cheap Sign .com.au</h1>
+       
         <?php include_once 'includes/form-html.php' ?>
+        
+        <script type="text/javascript" src="/assets/js/js1Compiled.js"></script>
+        
+        <script type="text/javascript" src="/assets/js/js2Compiled.js"></script>
+        
     </body>
     </html>
