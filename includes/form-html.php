@@ -52,10 +52,10 @@
 		</div>
 
 		<!-- doubleSided-->
-		<div class="input-container doubleSided">
+		<div class="input-container">
 			<label>Double Sided?</label>
-			<input type="checkbox" name="doubleSided" value="double sided" checked>
-			<span class="label">Yes</span>
+			<input type="checkbox" name="doubleSided" value="double sided" class="doubleSided" >
+			<span class="doubleSidedLabel"></span>
 		</div>
 
 	</div>
@@ -328,7 +328,7 @@
 				<div class="input-container">
 					<label>Full Width Text?</label>
 					<input type="checkbox" name="fullWidth" value="full width" class="fullWidth" checked>
-					<span class="label">Yes</span>
+					<span class="fullWidthLabel"></span>
 	</div>
 
 				<div class="input-container">
@@ -344,7 +344,7 @@
 				<div class="input-container">
 					<label>Invert Colors?</label>
 					<input type="checkbox" name="invertColour" value="inverted" class="invertColour">
-					<span class="label">Yes</span>
+					<span class="invertColourLabel"></span>
 	</div>
 
 			</div>
@@ -401,7 +401,7 @@
 		<div class="input-container">
 			<label>Local Pickup?</label>
 			<input type="checkbox" name="localPickup" value="local pickup" class="localPickup">
-			<span class="label">Yes</span>
+			<span class="localPickupLabel"></span>
 		</div>
 	</div>
 </section>

@@ -18,10 +18,32 @@ console.log('sizeOfSignvalue = '+sizeOfSignValue);
 
 
 //signOrientation
-let signOrientation = document.querySelector('input[name="signOrientation"]');
-let signOrientationValue = document.querySelector('input[name="signOrientation"]:checked').value;
-//debugging
-console.log('signOrientationValue = '+signOrientationValue);
+let signOrientation = document.querySelectorAll('input[name="signOrientation"]');
+let signOrientationValue;
+(function signOrientationCheck() {
+	
+	 // loop through list of radio buttons
+	for (let i=0; i < signOrientation.length; i++) {
+		
+		signOrientation[i].onchange = function(){
+			signOrientationUpdate()
+		};
+	}
+	
+	function signOrientationUpdate() {
+
+		 // loop through list of radio buttons
+    	for (let i=0; i < signOrientation.length; i++) {
+
+        	if ( signOrientation[i].checked ) { // radio checked?
+				signOrientationValue = signOrientation[i].value; 
+        	}
+    	}
+		//debugging
+		console.log('signOrientationValue = '+signOrientationValue);
+	}
+	signOrientationUpdate();
+})();
 
 
 //signPadding
@@ -39,7 +61,7 @@ signPadding.oninput = function() {
 	console.log('signPadding = '+signPaddingValue);	
 }
 //debugging
-console.log('signPadding = '+signPaddingValue);
+console.log('signPaddingValue = '+signPaddingValue);
 
 
 //signColour
@@ -51,9 +73,27 @@ console.log('signColourValue = '+signColourValue);
 
 //doubleSided
 let doubleSided = document.querySelector('.doubleSided');
-let doubleSidedValue = document.querySelector('input[name="doubleSided"]:checked').value;
-//debugging
-console.log('doubleSidedValue = '+doubleSidedValue);
+let doubleSidedValue;
+(function doubleSidedCheck() {
+	
+document.querySelector('.doubleSided').onchange = function() {doubleSidedUpdate()};
+	
+	function doubleSidedUpdate() {
+		doubleSidedValue = document.querySelector('.doubleSided').checked;
+
+		if (doubleSidedValue == true){
+			doubleSidedValue = 'Yes';
+		}else if (doubleSidedValue == false){
+			doubleSidedValue = 'No';
+		}
+		//debugging
+		console.log('doubleSidedValue = '+doubleSidedValue);
+	}
+	doubleSidedUpdate();
+	
+	
+document.querySelector(".doubleSidedLabel").innerHTML = 'Yes';
+})();
 
 
 //store values
@@ -86,16 +126,56 @@ let demoPadding = document.getElementsByClassName('demoPadding');
 
 //LINE INPUT VARIABLES
 
+//hidePadding
 let hidePadding = document.querySelector('.hidePadding');
-let hidePaddingValue = document.querySelector('input[name="hidePadding"]').value;
-//debugging
-console.log('hidePaddingValue = '+hidePaddingValue);
+let hidePaddingValue;
+(function hidePaddingCheck() {
+	
+document.querySelector('.hidePadding').onchange = function() {hidePaddingUpdate()};
+	
+	function hidePaddingUpdate() {
+		hidePaddingValue = document.querySelector('.hidePadding').checked;
+
+		if (hidePaddingValue == true){
+			hidePaddingValue = 'Yes';
+		}else if (hidePaddingValue == false){
+			hidePaddingValue = 'No';
+		}
+		//debugging
+		console.log('hidePaddingValue = '+hidePaddingValue);
+	}
+	hidePaddingUpdate();
+
+})();
 
 
-let lineDistribution = document.querySelector('input[name="lineDistribution"]');
-let lineDistributionValue = document.querySelector('input[name="lineDistribution"]:checked').value;
-//debugging
-console.log('lineDistributionValue = '+lineDistributionValue);
+//lineDistribution
+let lineDistribution = document.querySelectorAll('input[name="lineDistribution"]');
+let lineDistributionValue;
+(function lineDistributionCheck() {
+	
+	 // loop through list of radio buttons
+	for (let i=0; i < lineDistribution.length; i++) {
+		
+		lineDistribution[i].onchange = function(){
+			lineDistributionUpdate()
+		};
+	}
+	
+	function lineDistributionUpdate() {
+
+		 // loop through list of radio buttons
+    	for (let i=0; i < lineDistribution.length; i++) {
+
+        	if ( lineDistribution[i].checked ) { // radio checked?
+				lineDistributionValue = lineDistribution[i].value; 
+        	}
+    	}
+		//debugging
+		console.log('lineDistributionValue = '+lineDistributionValue);
+	}
+	lineDistributionUpdate();
+})();
 
 
 //create object, add input values
@@ -126,10 +206,31 @@ let lineFontValue = lineFont.options[lineFont.selectedIndex].value;
 //debugging
 console.log('lineFontValue = '+lineFontValue);
 
+
+//fullWidth
 let fullWidth = document.querySelector('.fullWidth');
-let fullWidthValue = document.querySelector('input[name="fullWidth"]:checked').value;
-//debugging
-console.log('fullWidthValue = '+fullWidthValue);
+let fullWidthValue;
+(function fullWidthCheck() {
+	
+document.querySelector('.fullWidth').onchange = function() {fullWidthUpdate()};
+	
+	function fullWidthUpdate() {
+		fullWidthValue = document.querySelector('.fullWidth').checked;
+
+		if (fullWidthValue == true){
+			fullWidthValue = 'Yes';
+		}else if (fullWidthValue == false){
+			fullWidthValue = 'No';
+		}
+		//debugging
+		console.log('fullWidthValue = '+fullWidthValue);
+	}
+	fullWidthUpdate();
+	
+	
+document.querySelector(".fullWidthLabel").innerHTML = 'Yes';
+})();
+
 
 let letterHeight = document.querySelector('.letterHeight');
 let letterHeightValue = document.querySelector('input[name="letterHeight"]').value;
@@ -141,10 +242,31 @@ let vinylColourValue = document.querySelector('input[name="vinylColour"]').value
 //debugging
 console.log('vinylColourValue = '+vinylColourValue);
 
+
+//invertColour
 let invertColour = document.querySelector('.invertColour');
-let invertColourValue = document.querySelector('input[name="invertColour"]').value;
-//debugging
-console.log('invertColourValue = '+invertColourValue);
+let invertColourValue;
+(function invertColourCheck() {
+	
+document.querySelector('.invertColour').onchange = function() {invertColourUpdate()};
+	
+	function invertColourUpdate() {
+		invertColourValue = document.querySelector('.invertColour').checked;
+
+		if (invertColourValue == true){
+			invertColourValue = 'Yes';
+		}else if (invertColourValue == false){
+			invertColourValue = 'No';
+		}
+		//debugging
+		console.log('invertColourValue = '+invertColourValue);
+	}
+	invertColourUpdate();
+	
+	
+document.querySelector(".invertColourLabel").innerHTML = 'Yes';
+})();
+
 
 let	addButton = document.querySelectorAll('.addLine');
 let removeButton = document.querySelectorAll('.removeLine');
@@ -165,10 +287,36 @@ let removeButton = document.querySelectorAll('.removeLine');
 
 // *** OPTIONS VARIABLES *** //
 
-let signStands = document.querySelector('.signStands');
-let signStandsValue = document.querySelector('input[name="signStands"]').value;
-//debugging
-console.log('signStandsValue = '+signStandsValue);
+//signStands
+let signStands = document.querySelectorAll('input[name="signStands"]');
+let signStandsValue;
+(function signStandsCheck() {
+	
+	 // loop through list of radio buttons
+	for (let i=0; i < signStands.length; i++) {
+		
+		signStands[i].onchange = function(){
+			signStandsUpdate()
+		};
+	}
+	
+	function signStandsUpdate() {
+
+		 // loop through list of radio buttons
+    	for (let i=0; i < signStands.length; i++) {
+
+        	if ( signStands[i].checked ) { // radio checked?
+				signStandsValue = signStands[i].value; 
+        	}
+    	}
+		//debugging
+		console.log('signStandsValue = '+signStandsValue);
+	}
+	signStandsUpdate();
+})();
+
+
+
 
 let signQuantity = document.querySelector('.signQuantity');
 let signQuantityValue = document.querySelector('input[name="signQuantity"]').value;
@@ -180,11 +328,30 @@ let signLocationValue = signLocation.options[signLocation.selectedIndex].value;
 //debugging
 console.log('signLocationValue = '+signLocationValue);
 
-let localPickup = document.querySelector('.localPickup');
-let localPickupValue = document.querySelector('input[name="localPickup"]').value;
 
-//debugging
-console.log('localPickupValue = '+localPickupValue);
+//localPickup
+let localPickup = document.querySelector('.localPickup');
+let localPickupValue;
+(function invertColourCheck() {
+	
+document.querySelector('.localPickup').onchange = function() {localPickupUpdate()};
+	
+	function localPickupUpdate() {
+		localPickupValue = document.querySelector('.localPickup').checked;
+
+		if (localPickupValue == true){
+			localPickupValue = 'Yes';
+		}else if (localPickupValue == false){
+			localPickupValue = 'No';
+		}
+		//debugging
+		console.log('localPickupValue = '+localPickupValue);
+	}
+	localPickupUpdate();
+	
+	
+document.querySelector(".localPickupLabel").innerHTML = 'Yes';
+})();
 
 //store values
 (function createOptionsObject(){
@@ -472,7 +639,7 @@ function getLineData(){
 				<div class="input-container">
 				<label>Invert Colors?</label>
 				<input type="checkbox" name="invertColour" value="inverted" class="invertColour">
-				<span class="label">Yes</span>
+				<span class="invertColourLabel"></span>
 				</div>
 
 				</div>
