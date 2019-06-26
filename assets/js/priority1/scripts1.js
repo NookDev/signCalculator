@@ -10,11 +10,18 @@ let summaryObject;
 //sizeOfSign
 let sizeOfSign = document.querySelector('.sizeOfSign');
 let sizeOfSignValue = sizeOfSign.options[sizeOfSign.selectedIndex].value;
-let sizeOfSignText = sizeOfSign.options[sizeOfSign.selectedIndex].text;
+(function(){
+	sizeOfSign.onchange = function(){
+		sizeOfSignValue = sizeOfSign.options[sizeOfSign.selectedIndex].value;
+		console.log('sizeOfSignvalue = '+sizeOfSignValue);
+	}
+})();
+//let sizeOfSignText = sizeOfSign.options[sizeOfSign.selectedIndex].text;
 //debugging
 //console.log('sizeOfSign '+sizeOfSign);
 //console.log('sizeOfSigntext = '+sizeOfSignText);
 console.log('sizeOfSignvalue = '+sizeOfSignValue);
+
 
 
 //signOrientation
@@ -67,7 +74,12 @@ console.log('signPaddingValue = '+signPaddingValue);
 //signColour
 let signColour = document.querySelector('.signColour');
 let signColourValue = signColour.options[signColour.selectedIndex].value;
-//debugging
+(function(){
+	signColour.onchange = function(){
+		signColourValue = signColour.options[signColour.selectedIndex].value;
+		console.log('signColourValue = '+signColourValue);
+	}
+})();
 console.log('signColourValue = '+signColourValue);
 
 
@@ -191,19 +203,34 @@ let lineDistributionValue;
 
 // *** LINE INPUT VARIABLES *** //
 
+//lineNumber
 let lineNumber = document.querySelectorAll('.lineNumber');
 let lineNumberValue = lineNumber.length;
 //debugging
 console.log('lineNumberValue = '+lineNumberValue);
 
+//lineText
 let lineText = document.querySelector('.lineText');
 let lineTextValue = document.querySelector('input[name="lineText"]').value;
 //debugging
 console.log('lineTextValue = '+lineTextValue);
+lineText.addEventListener("keyup", liveTextFunction);
+function liveTextFunction(){
+	lineTextValue = document.querySelector('input[name="lineText"]').value;
+	//debugging
+	console.log('lineTextValue = '+lineTextValue);
+	
+}
 
+//lineFont;
 let lineFont = document.querySelector('.lineFont');
 let lineFontValue = lineFont.options[lineFont.selectedIndex].value;
-//debugging
+(function(){
+	lineFont.onchange = function(){
+		lineFontValue = lineFont.options[lineFont.selectedIndex].value;
+		console.log('lineFontValue = '+lineFontValue);
+	}
+})();
 console.log('lineFontValue = '+lineFontValue);
 
 
@@ -232,14 +259,29 @@ document.querySelector(".fullWidthLabel").innerHTML = 'Yes';
 })();
 
 
+//letterHeight
 let letterHeight = document.querySelector('.letterHeight');
 let letterHeightValue = document.querySelector('input[name="letterHeight"]').value;
 //debugging
 console.log('letterHeightValue = '+letterHeightValue);
+letterHeight.addEventListener("keyup", letterHeightFunction);
+function letterHeightFunction(){
+	letterHeightValue = document.querySelector('input[name="letterHeight"]').value;
+	//debugging
+	console.log('letterHeightValue = '+letterHeightValue);
+	
+}
 
-let vinylColour = document.querySelector('.vinylColour');
-let vinylColourValue = document.querySelector('input[name="vinylColour"]').value;
-//debugging
+
+//vinylColour;
+let vinylColour = document.querySelector('input[name="vinylColour"]');
+let vinylColourValue = vinylColour.value;
+(function(){
+	vinylColour.onchange = function(){
+		vinylColourValue = vinylColour.value;;
+		console.log('vinylColourValue = '+vinylColourValue);
+	}
+})();
 console.log('vinylColourValue = '+vinylColourValue);
 
 
@@ -318,21 +360,37 @@ let signStandsValue;
 
 
 
+//signQuantity;
 let signQuantity = document.querySelector('.signQuantity');
 let signQuantityValue = document.querySelector('input[name="signQuantity"]').value;
 //debugging
 console.log('signQuantityValue = '+signQuantityValue);
+signQuantity.addEventListener("keyup", signQuantityFunction);
+function signQuantityFunction(){
+	signQuantityValue = document.querySelector('input[name="signQuantity"]').value;
+	//debugging
+	console.log('signQuantityValue = '+signQuantityValue);
+	
+}
 
+
+//signLocation;
 let signLocation = document.querySelector('.signLocation');
 let signLocationValue = signLocation.options[signLocation.selectedIndex].value;
-//debugging
+(function(){
+	signLocation.onchange = function(){
+		signLocationValue = signLocation.options[signLocation.selectedIndex].value;
+		console.log('signLocationValue = '+signLocationValue);
+	}
+})();
 console.log('signLocationValue = '+signLocationValue);
+
 
 
 //localPickup
 let localPickup = document.querySelector('.localPickup');
 let localPickupValue;
-(function invertColourCheck() {
+(function localPickupCheck() {
 	
 document.querySelector('.localPickup').onchange = function() {localPickupUpdate()};
 	

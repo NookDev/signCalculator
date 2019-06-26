@@ -15,7 +15,7 @@
 		</div>
 		
 		<!-- signOrientation -->
-		<div class="input-container signOrientation">
+		<div class="input-container">
 			<label>Sign Orientation</label>
 			
 			<div class="radio">
@@ -318,10 +318,10 @@
 					<label>Select Font</label>
 					<select class="lineFont">
 					  <option value="Impact" selected>Impact</option>
-					  <option value="">All</option>
-					  <option value="">the</option>
-					   <option value="">google</option>
-					  <option value="">fonts</option>
+					  <option value="1">All</option>
+					  <option value="2">the</option>
+					   <option value="3">google</option>
+					  <option value="4">fonts</option>
 					</select>
 	</div>
 
@@ -387,13 +387,13 @@
 			<label>Location</label>
 			<select class="signLocation">
 			  <option value="WA" selected>WA</option>
-			  <option value="">NSW</option>
-			  <option value="">NT</option>
-			   <option value="">SA</option>
-			  <option value="">TAS</option>
-        <option value="">ACT</option>
-        <option value="">VIC</option>
-        <option value="">QLD</option>
+			  <option value="NSW">NSW</option>
+			  <option value="NT">NT</option>
+			   <option value="SA">SA</option>
+			  <option value="TAS">TAS</option>
+        <option value="ACT">ACT</option>
+        <option value="VIC">VIC</option>
+        <option value="QLD">QLD</option>
 			</select>
 		</div>
 
